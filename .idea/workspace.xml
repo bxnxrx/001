@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
-      <change beforePath="$PROJECT_DIR$/project-001/html/login_page/login_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/html/login_page/login_page.html" afterDir="false" />
-    </list>
+    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +96,7 @@
       <workItem from="1745874281027" duration="61000" />
       <workItem from="1745874362463" duration="419000" />
       <workItem from="1745874799401" duration="269000" />
-      <workItem from="1745875099489" duration="978000" />
+      <workItem from="1745875099489" duration="1105000" />
     </task>
     <task id="LOCAL-00001" summary="ff">
       <option name="closed" value="true" />
@@ -212,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745875808144</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
+      <option name="closed" value="true" />
+      <created>1745876089774</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1745876089774</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
