@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f8f8f8;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.form-section {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+h2 {
+    color: #5c2d91;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+p a {
+    color: #5c2d91;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    background: #f2ebff;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-fields input {
+    flex: 1;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin: 12px 0;
+}
+
+.terms input {
+    margin-right: 8px;
+}
+
+.terms a {
+    text-decoration: underline;
+    color: #5c2d91;
+}
+
+.create-account {
+    width: 100%;
+    background: #9c5eff;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.or-divider {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.google-signin {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.google-signin img {
+    width: 24px;
+    height: 24px;
+}
+
+.image-section img {
+    width: 250px;
+}
