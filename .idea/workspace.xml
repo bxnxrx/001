@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="chat ui stage 2 done">
+    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +31,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/bxnxrx/001.git&quot;,
-    &quot;accountId&quot;: &quot;81ada444-b688-4aa5-b406-04e992fadf7e&quot;
+    &quot;accountId&quot;: &quot;7b1b9156-e523-4437-b79a-b452f6af8555&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -52,7 +52,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Binara/WebstormProjects/001/project-001/assests",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/Sanjula/WebstormProjects/005/project-001/css/login_page",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,16 +64,19 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\css\login_page" />
+      <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\assests\login_page" />
       <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\assests\login_page" />
       <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
       </set>
     </attachedChunks>
   </component>
@@ -90,6 +94,10 @@
       <workItem from="1745852848824" duration="2642000" />
       <workItem from="1745856479261" duration="359000" />
       <workItem from="1745857112023" duration="5801000" />
+      <workItem from="1745874281027" duration="61000" />
+      <workItem from="1745874362463" duration="419000" />
+      <workItem from="1745874799401" duration="269000" />
+      <workItem from="1745875099489" duration="476000" />
     </task>
     <task id="LOCAL-00001" summary="ff">
       <option name="closed" value="true" />
@@ -179,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745863258617</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
+      <option name="closed" value="true" />
+      <created>1745875193698</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1745875193698</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +218,7 @@
     <MESSAGE value="jjjj" />
     <MESSAGE value="chat ui stage 1 done" />
     <MESSAGE value="chat ui stage 2 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="chat ui stage 2 done" />
+    <MESSAGE value="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done." />
+    <option name="LAST_COMMIT_MESSAGE" value="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done." />
   </component>
 </project>
