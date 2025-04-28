@@ -21,31 +21,38 @@
         <p class="welcome-text">Welcome back !!!</p>
         <h1 class="login-title">Login</h1>
 
-        <!-- Form Section -->
+        <!-- Authentication Form -->
         <form class="login-form" method="post" action="#" id="loginForm" novalidate>
-            <!-- Email Input -->
+            <!-- User Email Field -->
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" class="input-field" placeholder="Enter your email" required>
                 <div class="error-message" id="emailError"></div>
             </div>
 
-            <!-- Password Input -->
+            <!-- User Password Field with Toggle -->
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" class="input-field" placeholder="Enter your password" required>
+                <div class="password-field-container">
+                    <input type="password" id="password" class="input-field" placeholder="Enter your password" required>
+                    <span class="password-toggle" id="passwordToggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        </span>
+                </div>
                 <div class="error-message" id="passwordError"></div>
-                <div class="char-count" id="passwordCount">0</div>
+                <div class="password-info">
+                    <div class="char-count" id="passwordCount">0</div>
+                </div>
             </div>
 
-            <!-- Login Button -->
+            <!-- Primary Authentication Button -->
             <button type="submit" class="login-btn" id="loginButton">
                 <span class="btn-text">Login</span>
                 <span class="spinner-border" style="display: none;"></span>
             </button>
         </form>
 
-        <!-- OR Divider -->
+        <!-- Authentication Alternatives Separator -->
         <div class="divider-container">
             <hr class="divider-line">
             <p class="divider">OR</p>

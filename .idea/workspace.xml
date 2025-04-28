@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done." />
+    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,8 +48,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Error_Page.html.executor": "Run",
     "JavaScript Debug.chat_page.html.executor": "Run",
     "JavaScript Debug.login_page.html.executor": "Run",
+    "JavaScript Debug.splash_screen.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -71,6 +75,28 @@
       <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\assests\login_page" />
       <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
     </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.splash_screen.html">
+    <configuration name="Error_Page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/Error_Page/Error_Page.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="chat_page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/chat_page/chat_page.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="login_page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/login_page/login_page.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="splash_screen.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/splash_screen/splash_screen.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.splash_screen.html" />
+        <item itemvalue="JavaScript Debug.login_page.html" />
+        <item itemvalue="JavaScript Debug.chat_page.html" />
+        <item itemvalue="JavaScript Debug.Error_Page.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -97,6 +123,8 @@
       <workItem from="1745874362463" duration="419000" />
       <workItem from="1745874799401" duration="269000" />
       <workItem from="1745875099489" duration="1105000" />
+      <workItem from="1745876254915" duration="105000" />
+      <workItem from="1745876397784" duration="466000" />
     </task>
     <task id="LOCAL-00001" summary="ff">
       <option name="closed" value="true" />
@@ -218,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745876089774</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
+      <option name="closed" value="true" />
+      <created>1745876335453</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1745876335453</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

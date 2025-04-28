@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // DOM Elements
+    // UI Elements
     const loginForm = document.getElementById('loginForm');
     const loginButton = document.getElementById('loginButton');
     const googleButton = document.getElementById('googleButton');
@@ -8,17 +8,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const emailError = document.getElementById('emailError');
     const passwordError = document.getElementById('passwordError');
     const passwordCount = document.getElementById('passwordCount');
+    const passwordToggle = document.getElementById('passwordToggle');
 
-    // Email Pattern
+    // Validation Patterns
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Character Counter
+    // Password Visibility Toggle
+    passwordToggle.addEventListener('click', function() {
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            passwordToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>';
+        } else {
+            passwordInput.type = 'password';
+            passwordToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>';
+        }
+    });
+
+    // Password Length Display
     function updateCharCount() {
         const count = passwordInput.value.length;
         passwordCount.textContent = count;
     }
 
-    // Email Validation
+    // Email Field Validation
     function validateEmail() {
         if (!emailInput.value.trim()) {
             emailError.textContent = 'Email is required';
@@ -35,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Password Validation
+    // Password Field Validation
     function validatePassword() {
         if (!passwordInput.value.trim()) {
             passwordError.textContent = 'Password is required';
@@ -52,21 +64,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Event Listeners for Validation
+    // Live Input Validation
     emailInput.addEventListener('input', validateEmail);
     passwordInput.addEventListener('input', function() {
         validatePassword();
         updateCharCount();
     });
 
-    // Initialize the Character Counter
+    // Initialize Character Counter
     updateCharCount();
 
-    // Validation on Blur
+    // Blur Event Validation
     emailInput.addEventListener('blur', validateEmail);
     passwordInput.addEventListener('blur', validatePassword);
 
-    // Animation Controls
+    // Loading State Management
     function showLoading(button) {
         button.classList.add('loading');
     }
@@ -85,26 +97,26 @@ document.addEventListener('DOMContentLoaded', function() {
         if (isEmailValid && isPasswordValid) {
             showLoading(loginButton);
 
-            // Simulated Authentication Process
+            // Simulate Authentication Process
             setTimeout(function() {
                 console.log('Login submitted successfully');
                 hideLoading(loginButton);
 
-                // Form Submission (Commented)
+                // Form submission - uncomment in production
                 // loginForm.submit();
             }, 2000);
         }
     });
 
-    // Google Authentication
+    // Social Authentication Handler
     googleButton.addEventListener('click', function() {
         showLoading(googleButton);
 
-        // Simulated Google Auth
+        // Simulate OAuth Flow
         setTimeout(function() {
             console.log('Google login initiated');
             hideLoading(googleButton);
-            // Google Auth API Integration (Future)
+            // Google OAuth implementation would go here
         }, 1500);
     });
 });
