@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Poppins Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project-001/css/login_page/login_page.css">
+</head>
+<body>
+<div class="main-wrapper">
+    <!-- Welcome Image -->
+    <img src="project-001/assests/login_page/image1.png" alt="Welcome Back Illustration" class="outside-image">
+
+    <!-- Main Container -->
+    <div class="login-container">
+        <!-- Welcome Message -->
+        <p class="welcome-text">Welcome back !!!</p>
+        <h1 class="login-title">Login</h1>
+
+        <!-- Form Section -->
+        <form class="login-form" method="post" action="#" id="loginForm" novalidate>
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-field" placeholder="Enter your email" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="input-field" placeholder="Enter your password" required>
+                <div class="error-message" id="passwordError"></div>
+                <div class="char-count" id="passwordCount">0</div>
+            </div>
+
+            <!-- Login Button -->
+            <button type="submit" class="login-btn" id="loginButton">
+                <span class="btn-text">Login</span>
+                <span class="spinner-border" style="display: none;"></span>
+            </button>
+        </form>
+
+        <!-- OR Divider -->
+        <div class="divider-container">
+            <hr class="divider-line">
+            <p class="divider">OR</p>
+            <hr class="divider-line">
+        </div>
+
+        <!-- Google Sign-in Option -->
+        <button class="google-btn" id="googleButton">
+                <span class="btn-text">
+                    <img src="project-001/assests/login_page/googleicon.png" alt="Google Logo">
+                    <span>Login with Google</span>
+                </span>
+            <span class="spinner-border" style="display: none;"></span>
+        </button>
+
+        <!-- Sign Up Link -->
+        <p class="signup-text">Haven't sign Up yet, <a href="#" class="signup-link">Sign UP</a></p>
+    </div>
+</div>
+<!-- JavaScript -->
+<script src="project-001/assests/login_page/googleicon.png"></script>
+</body>
+</html>
