@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ayya Says - Akka Knows</title>
+    <link rel="stylesheet" href="../../../project-001/css/chat_ui/chat_ui.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <div class="logo-section">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="logo-text">
+                <span class="ayya-says">Ayya Says</span><br>
+                <span class="akka-knows">Akka Knows</span>
+            </div>
+        </div>
+
+        <button class="new-chat-btn">New Chat +</button>
+
+        <div class="avatar">
+            <img src="avatar.png" alt="Avatar" id="avatar-img">
+        </div>
+
+        <button class="profile-btn">
+            <img src="profile.png" alt="Profile" class="profile-pic">
+            <span>My Profile</span>
+        </button>
+    </aside>
+
+    <main class="chat-area">
+        <div class="chat-header" id="chat-header">
+            <div class="mode-info">
+                <img src="avatar.png" alt="Mode Avatar" class="mode-avatar" id="mode-avatar">
+                <div>
+                    <h2 id="mode-title">Ayya mode</h2>
+                    <p id="mode-desc">කියන්න මචන්</p>
+                </div>
+            </div>
+
+            <div class="toggle-switch">
+                <label class="switch">
+                    <input type="checkbox" id="toggle-mode">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+            <div class="bot-message" id="bot-message">
+                Machan, what's on your mind today?
+            </div>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" placeholder="Type a message...">
+            <button class="send-btn">➔</button>
+        </div>
+
+    </main>
+
+</div>
+
+<script src="../../scripts/chat_ui/chat_ui.js"></script>
+</body>
+</html>
+
