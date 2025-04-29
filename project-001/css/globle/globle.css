@@ -1,3 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Helvetica, sans-serif;
+
+}
 .navbar{
     background-color: white;
     overflow: hidden;
@@ -5,7 +16,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
-    font-family: Poppins, Helvetica, sans-serif;
     top: 0;
     left: 0;
     width: 100%;
@@ -35,4 +45,31 @@
 .navbar img{
     width: 65px;
     height: 60px;
+}
+footer {
+    margin-top: 10%;
+    background-color: white;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-right: 50px;
+
+}
+
+.footer-links {
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #9A60E9;
 }
