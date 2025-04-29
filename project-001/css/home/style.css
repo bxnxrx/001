@@ -51,3 +51,7 @@
     padding-bottom: 90px;
     text-align: center;
 }
+#logo-img {
+    width: 120px;
+    height: auto; /* Maintains aspect ratio */
+}
