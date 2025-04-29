@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +31,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/bxnxrx/001.git&quot;,
-    &quot;accountId&quot;: &quot;81ada444-b688-4aa5-b406-04e992fadf7e&quot;
+    &quot;accountId&quot;: &quot;7b1b9156-e523-4437-b79a-b452f6af8555&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -48,11 +48,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Error_Page.html.executor": "Run",
     "JavaScript Debug.chat_page.html.executor": "Run",
+    "JavaScript Debug.login_page.html.executor": "Run",
+    "JavaScript Debug.splash_screen.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Binara/WebstormProjects/001/project-001/assests",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/Sanjula/WebstormProjects/005/project-001/css/login_page",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,16 +67,41 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\css\login_page" />
+      <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\assests\login_page" />
       <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\assests\login_page" />
       <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
     </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.splash_screen.html">
+    <configuration name="Error_Page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/Error_Page/Error_Page.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="chat_page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/chat_page/chat_page.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="login_page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/login_page/login_page.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="splash_screen.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/splash_screen/splash_screen.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.splash_screen.html" />
+        <item itemvalue="JavaScript Debug.login_page.html" />
+        <item itemvalue="JavaScript Debug.chat_page.html" />
+        <item itemvalue="JavaScript Debug.Error_Page.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
       </set>
     </attachedChunks>
   </component>
@@ -89,7 +118,13 @@
       <workItem from="1745850339585" duration="737000" />
       <workItem from="1745852848824" duration="2642000" />
       <workItem from="1745856479261" duration="359000" />
-      <workItem from="1745857112023" duration="4106000" />
+      <workItem from="1745857112023" duration="5801000" />
+      <workItem from="1745874281027" duration="61000" />
+      <workItem from="1745874362463" duration="419000" />
+      <workItem from="1745874799401" duration="269000" />
+      <workItem from="1745875099489" duration="1105000" />
+      <workItem from="1745876254915" duration="105000" />
+      <workItem from="1745876397784" duration="466000" />
     </task>
     <task id="LOCAL-00001" summary="ff">
       <option name="closed" value="true" />
@@ -163,7 +198,63 @@
       <option name="project" value="LOCAL" />
       <updated>1745855312197</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="chat ui stage 1 done">
+      <option name="closed" value="true" />
+      <created>1745861861718</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1745861861718</updated>
+    </task>
+    <task id="LOCAL-00011" summary="chat ui stage 2 done">
+      <option name="closed" value="true" />
+      <created>1745863258617</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1745863258617</updated>
+    </task>
+    <task id="LOCAL-00012" summary="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
+      <option name="closed" value="true" />
+      <created>1745875193698</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1745875193698</updated>
+    </task>
+    <task id="LOCAL-00013" summary="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
+      <option name="closed" value="true" />
+      <created>1745875584206</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1745875584206</updated>
+    </task>
+    <task id="LOCAL-00014" summary="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
+      <option name="closed" value="true" />
+      <created>1745875808144</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1745875808144</updated>
+    </task>
+    <task id="LOCAL-00015" summary="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
+      <option name="closed" value="true" />
+      <created>1745876089774</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1745876089774</updated>
+    </task>
+    <task id="LOCAL-00016" summary="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
+      <option name="closed" value="true" />
+      <created>1745876335453</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1745876335453</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +275,9 @@
     <MESSAGE value="ff" />
     <MESSAGE value="2" />
     <MESSAGE value="jjjj" />
-    <option name="LAST_COMMIT_MESSAGE" value="jjjj" />
+    <MESSAGE value="chat ui stage 1 done" />
+    <MESSAGE value="chat ui stage 2 done" />
+    <MESSAGE value="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done." />
+    <option name="LAST_COMMIT_MESSAGE" value="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done." />
   </component>
 </project>
