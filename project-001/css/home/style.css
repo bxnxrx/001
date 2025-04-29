@@ -1,7 +1,32 @@
-.navbar{
-    background-color: white;
-    text-align: right;
-    padding-right: 10%;
-    padding-top: 100px;
 
+.title-section{
+    margin-left: 10%;
 }
+.title-section h1 {
+    font-family: Luckiest Guy, Helvetica, sans-serif;
+    margin-top: 10%;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.5;
+}
+.title-section p{
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+.title-section a{
+    font-family: Luckiest Guy, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    padding: 10px 15px;
+    transition: background 0.3s;
+    font-weight:normal;
+    margin-right: 20px;
+    background-color:#9A60E9;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+

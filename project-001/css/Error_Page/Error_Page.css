@@ -1,0 +1,59 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     /* Make all text bold by default */
+}
+
+/* Error Content */
+.error-content {
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    max-width: 980px;
+    gap: 50px;
+    padding: 20px;
+}
+
+/* Error Icon - Larger size */
+.error-icon {
+    align-content: center;
+    width: 380px;
+    height: 480px;
+    object-fit: contain;
+}
+
+/* Error Text */
+.error-text {
+    text-align: left;
+}
+
+/* Error Heading - Your exact purple color */
+h1 {
+    color: #722CD2;
+    font-size: 3rem;
+    margin: 0 0 25px 0;
+    font-weight: bolder; /* Explicit bold */
+}
+
+/* Error Messages */
+.error-messages p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 0 18px 0;
+
+}
+
+.error-messages p:last-child {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 0;
+     /* Explicit bold for italic text too */
+}
