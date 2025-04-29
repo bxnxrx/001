@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="made few ux improvements and validation improvements">
+    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="profile creation page is done. added improvements in css stylings, has to clarify minor things bout js, did improve the login page's stylings too focused on small details of both and js validations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-001/html/Error_Page/Error_Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/html/Error_Page/Error_Page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-001/html/login_page/login_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/html/login_page/login_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-001/html/profile_creation/profile_creation.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/html/profile_creation/profile_creation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-001/html/About_Us/About_Us.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,28 +49,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.Error_Page.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.chat_page.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.login_page.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.splash_screen.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sanjula/WebstormProjects/005/project-001/css/login_page&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Error_Page.html.executor": "Run",
+    "JavaScript Debug.Profile_CardPage.html.executor": "Run",
+    "JavaScript Debug.chat_page.html.executor": "Run",
+    "JavaScript Debug.globle.html.executor": "Run",
+    "JavaScript Debug.home.html.executor": "Run",
+    "JavaScript Debug.login_page.html.executor": "Run",
+    "JavaScript Debug.profile_creation.html.executor": "Run",
+    "JavaScript Debug.signup_page.html.executor": "Run",
+    "JavaScript Debug.splash_screen.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/Sanjula/WebstormProjects/005/project-001/assests/about_us",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\assests\about_us" />
       <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\css\login_page" />
       <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\assests\login_page" />
       <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
@@ -82,14 +86,17 @@
       <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.login_page.html">
-    <configuration name="Error_Page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/Error_Page/Error_Page.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.about_us.html">
+    <configuration name="about_us.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/about_us/about_us.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="chat_page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/chat_page/chat_page.html" useBuiltInWebServerPort="true">
+    <configuration name="globle.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/globle/globle.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="login_page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/login_page/login_page.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="signup_page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/signup_page/signup_page.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="splash_screen.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/splash_screen/splash_screen.html" useBuiltInWebServerPort="true">
@@ -97,10 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.about_us.html" />
+        <item itemvalue="JavaScript Debug.globle.html" />
         <item itemvalue="JavaScript Debug.login_page.html" />
+        <item itemvalue="JavaScript Debug.signup_page.html" />
         <item itemvalue="JavaScript Debug.splash_screen.html" />
-        <item itemvalue="JavaScript Debug.chat_page.html" />
-        <item itemvalue="JavaScript Debug.Error_Page.html" />
       </list>
     </recent_temporary>
   </component>
@@ -131,6 +139,7 @@
       <workItem from="1745875099489" duration="1105000" />
       <workItem from="1745876254915" duration="105000" />
       <workItem from="1745876397784" duration="466000" />
+      <workItem from="1745938734021" duration="5726000" />
     </task>
     <task id="LOCAL-00001" summary="ff">
       <option name="closed" value="true" />
@@ -268,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745930045960</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="profile creation page is done. added improvements in css stylings, has to clarify minor things bout js, did improve the login page's stylings too focused on small details of both and js validations">
+      <option name="closed" value="true" />
+      <created>1745930798026</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1745930798026</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +310,7 @@
     <MESSAGE value="chat ui stage 2 done" />
     <MESSAGE value="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done." />
     <MESSAGE value="made few ux improvements and validation improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="made few ux improvements and validation improvements" />
+    <MESSAGE value="profile creation page is done. added improvements in css stylings, has to clarify minor things bout js, did improve the login page's stylings too focused on small details of both and js validations" />
+    <option name="LAST_COMMIT_MESSAGE" value="profile creation page is done. added improvements in css stylings, has to clarify minor things bout js, did improve the login page's stylings too focused on small details of both and js validations" />
   </component>
 </project>
