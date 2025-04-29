@@ -1,0 +1,1010 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Improved vertical centering */
+body {
+    background-color: #f5f8ff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    overflow: hidden;
+}
+
+.font-header {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main container */
+main {
+    background-color: #f5f8ff;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 56rem;
+    height: auto;
+    max-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: auto;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 0.5rem;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.back-arrow {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #722CD2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-arrow:hover {
+    transform: scale(1.1) translateX(-2px);
+    color: #8450d7;
+}
+
+.page-title {
+    font-weight: 600;
+    color: #722CD2;
+    font-size: 1.8rem;
+}
+
+/* Header image adjustments - better fit without changing header size */
+.header-image {
+    width: auto;
+    height: 5rem; /* Adjust as needed */
+    object-fit: contain;
+    border-radius: 0;
+    transition: transform 0.3s;
+    margin-right: -0.2rem;
+    align-self: center;
+}
+
+.header-image:hover {
+    transform: scale(1.05);
+}
+
+/* Form section */
+.form-container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+/* Form rows */
+.form-row {
+    display: flex;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+/* Form columns */
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 220px;
+}
+
+/* Right column - flex layout for vertical centering */
+.form-column:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.75rem;
+}
+
+/* Form fields */
+.form-field {
+    position: relative;
+    margin-bottom: 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.field-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    color: #555;
+}
+
+/* Enhanced input field styling with purplish normal state */
+.field-input {
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    padding-right: 2.5rem; /* Space for validation icon */
+    border: 1px solid #d8c6f2;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    background-color: #f5f0ff;
+    transition: all 0.3s ease;
+}
+
+.field-input::placeholder {
+    color: #a195c5;
+}
+
+.field-input:hover {
+    border-color: #9A60E9;
+    box-shadow: 0 2px 5px rgba(154, 96, 233, 0.1);
+}
+
+.field-input:focus {
+    outline: none;
+    border-color: #9A60E9;
+    background-color: #f9f6ff;
+    box-shadow: 0 3px 8px rgba(154, 96, 233, 0.15);
+}
+
+/* Validation states */
+.field-input.invalid {
+    border-color: #ff3860;
+    background-color: rgba(255, 56, 96, 0.05);
+    box-shadow: 0 0 0 1px rgba(255, 56, 96, 0.2);
+    animation: errorShake 0.5s;
+}
+
+/* Valid field styling with green border and purplish background */
+.field-input.valid {
+    border-color: #23d160;
+    background-color: #f5f0ff;
+    box-shadow: 0 0 0 1px rgba(35, 209, 96, 0.2);
+}
+
+/* Ensure hover and focus states preserve the valid colors */
+.field-input.valid:hover, .field-input.valid:focus {
+    border-color: #23d160;
+    background-color: #f5f0ff;
+    box-shadow: 0 0 0 2px rgba(35, 209, 96, 0.2);
+}
+
+/* Validation icon base styles */
+.validation-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+/* Different validation icon types */
+.validation-icon.checkmark {
+    color: #23d160;
+    display: none;
+}
+
+.validation-icon.xmark {
+    color: #ff3860;
+    display: none;
+}
+
+.validation-icon.loading {
+    border: 2px solid rgba(154, 96, 233, 0.2);
+    border-top: 2px solid #9A60E9;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    display: none;
+}
+
+/* State-based visibility */
+.field-input.validating + .validation-icon.loading {
+    display: block;
+    opacity: 1;
+}
+
+.field-input.valid + .validation-icon.checkmark {
+    display: block;
+    opacity: 1;
+    animation: scaleIn 0.3s ease-out forwards;
+}
+
+.field-input.invalid + .validation-icon.xmark {
+    display: block;
+    opacity: 1;
+    animation: shake 0.5s ease-out forwards;
+}
+
+/* Username-specific validation icon styles - improved alignment */
+#username + .validation-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+/* Loading circle specific alignment */
+#username + .validation-icon.loading {
+    width: 14px;
+    height: 14px;
+    right: 13px; /* Adjust to ensure perfect alignment */
+}
+
+/* Hide general validation icons from all fields */
+.validation-icon {
+    display: none;
+}
+
+/* Only show validation icons for username field */
+#username + .validation-icon.loading,
+#username + .validation-icon.checkmark,
+#username + .validation-icon.xmark {
+    display: block;
+}
+
+#username.validating + .validation-icon.loading {
+    opacity: 1;
+}
+
+#username.valid + .validation-icon.checkmark {
+    opacity: 1;
+    animation: scaleIn 0.3s ease-out forwards;
+}
+
+#username.invalid + .validation-icon.xmark {
+    opacity: 1;
+    animation: shake 0.5s ease-out forwards;
+}
+
+/* Validation animations */
+@keyframes scaleIn {
+    0% { transform: scale(0); }
+    70% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-2px); }
+    40%, 80% { transform: translateX(2px); }
+}
+
+@keyframes errorShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+}
+
+.error-message {
+    color: #ff3860;
+    font-size: 0.7rem;
+    height: 1rem;
+    line-height: 1;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+/* Date field */
+.date-field {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.date-picker-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 5;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.date-picker-btn:hover {
+    background-color: rgba(154, 96, 233, 0.1);
+}
+
+.date-picker-btn svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.2s ease;
+}
+
+.date-picker-btn:hover svg {
+    transform: scale(1.1);
+}
+
+/* Avatar section with improved positioning */
+.avatar-section {
+    margin-top: 0.25rem;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    padding-top: 0;
+}
+
+.avatar-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.avatar {
+    width: 85px;
+    height: 110px;
+    border-radius: 20px;
+    border: 2px solid #e0d5f7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    object-fit: cover;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(154, 96, 233, 0.25);
+    border-color: rgba(154, 96, 233, 0.3);
+}
+
+.avatar-selected {
+    border: 2px solid #9A60E9;
+    box-shadow: 0 5px 15px rgba(154, 96, 233, 0.2);
+    transform: scale(1.02);
+}
+
+/* Submit button */
+.submit-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.4rem;
+}
+
+.submit-button {
+    background-color: #9A60E9;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.6rem 0;
+    width: 100%;
+    max-width: 300px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-button:hover {
+    background-color: #8450d7;
+    box-shadow: 0 5px 15px rgba(154, 96, 233, 0.3);
+    transform: translateY(-2px);
+}
+
+.submit-button:active {
+    transform: scale(0.98) translateY(0);
+    box-shadow: 0 2px 8px rgba(154, 96, 233, 0.2);
+}
+
+/* Loading spinner */
+.spinner-border {
+    display: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.submit-button.loading .btn-text {
+    visibility: hidden;
+}
+
+.submit-button.loading .spinner-border {
+    display: inline-block;
+}
+
+/* Material Design Date Picker Modal */
+.date-picker-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-picker-content {
+    background-color: #fff;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 24px 38px rgba(0,0,0,0.14), 0 9px 46px rgba(0,0,0,0.12);
+    overflow: hidden;
+    animation: modalFadeIn 0.25s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.date-picker-header {
+    background-color: #9A60E9;
+    color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-picker-month-year {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-picker-month {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.date-picker-year {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.date-picker-nav {
+    display: flex;
+    gap: 8px;
+}
+
+.month-nav-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.month-nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.month-nav-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.date-picker-calendar {
+    padding: 12px;
+}
+
+.date-picker-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.date-picker-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+}
+
+.date-picker-day {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin: 1px auto;
+}
+
+.date-picker-day:hover:not(.date-disabled) {
+    background-color: rgba(154, 96, 233, 0.1);
+}
+
+.date-picker-day.date-selected {
+    background-color: #9A60E9;
+    color: white;
+}
+
+.date-picker-day.date-today:not(.date-selected) {
+    border: 1px solid #9A60E9;
+}
+
+.date-picker-day.date-disabled {
+    color: #ccc;
+    cursor: default;
+}
+
+.date-picker-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 16px 12px;
+    gap: 8px;
+}
+
+.date-action-btn {
+    background: none;
+    border: none;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #9A60E9;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+}
+
+.date-action-btn:hover {
+    background-color: rgba(154, 96, 233, 0.1);
+}
+
+.date-action-primary {
+    color: #9A60E9;
+}
+
+/* Password field styles */
+.password-section {
+    width: auto;
+    margin-top: 0;
+}
+
+.password-field-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9A60E9;
+    opacity: 0.6;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.password-toggle:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.15);
+}
+
+.password-toggle svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+/* Password field adjustments for validation icon */
+.password-field-container .validation-icon {
+    right: 40px; /* Move validation icon to not overlap with eye icon */
+}
+
+.password-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0.1rem;
+    height: 12px;
+}
+
+.char-count {
+    font-size: 0.7rem;
+    color: #9A60E9;
+    display: flex;
+    align-items: center;
+    height: 12px;
+    transition: color 0.3s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .form-column {
+        min-width: 100%;
+    }
+
+    .avatar-grid {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .avatar {
+        width: 70px;
+        height: 90px;
+    }
+
+    .form-container {
+        padding: 0.75rem;
+    }
+
+    .avatar-section {
+        max-width: 100%;
+        padding: 1rem 0;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .page-title {
+        font-size: 1.4rem;
+    }
+
+    .back-arrow {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+
+    .header-image {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .form-container {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .field-input {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .field-label {
+        font-size: 0.75rem;
+    }
+
+    .submit-button {
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+
+    .date-picker-content {
+        max-width: 280px;
+    }
+
+    .date-picker-day {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 100px;
+    }
+}
+
+/* Username-specific validation icon styles - improved alignment and display */
+.form-field:has(#username) .validation-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: none; /* Hide by default */
+}
+
+/* Center loading circle precisely with the other icons */
+.form-field:has(#username) .validation-icon.loading {
+    width: 14px;
+    height: 14px;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Show loading icon when validating */
+.form-field:has(#username.validating) .validation-icon.loading {
+    display: block;
+    opacity: 1;
+}
+
+/* Show checkmark when valid */
+.form-field:has(#username.valid) .validation-icon.checkmark {
+    display: block;
+    opacity: 1;
+    animation: scaleIn 0.3s ease-out forwards;
+}
+
+/* Show X mark when invalid */
+.form-field:has(#username.invalid) .validation-icon.xmark {
+    display: block;
+    opacity: 1;
+    animation: shake 0.5s ease-out forwards;
+}
+
+/* Hide all other validation icons */
+.validation-icon {
+    display: none;
+}
+
+/* Ensure all username icons share the same position and size */
+#username + .validation-icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+/* Unify loading icon to match the same center alignment and size */
+#username + .validation-icon.loading {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+}
+
+/* Display icons based on validation states */
+#username.validating + .validation-icon.loading {
+    display: block;
+    opacity: 1;
+}
+#username.valid + .validation-icon.checkmark {
+    display: block;
+    opacity: 1;
+    animation: scaleIn 0.3s ease-out forwards;
+}
+#username.invalid + .validation-icon.xmark {
+    display: block;
+    opacity: 1;
+    animation: shake 0.5s ease-out forwards;
+}
+
+/* Final unified username validation icon rules */
+#username + .validation-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: block;
+}
+#username.validating + .validation-icon.loading {
+    opacity: 1;
+}
+#username.valid + .validation-icon.checkmark {
+    opacity: 1;
+    animation: scaleIn 0.3s ease-out forwards;
+}
+#username.invalid + .validation-icon.xmark {
+    opacity: 1;
+    animation: shake 0.5s ease-out forwards;
+}
+
+/* Add these styles to align the validation icons */
+.input-with-icons {
+    position: relative;
+    width: 100%;
+}
+
+.validation-icon-container {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.validation-icon {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+}
+
+.validation-icon.loading {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #9A60E9;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.validation-icon.checkmark {
+    color: #28a745;
+    display: none;
+}
+
+.validation-icon.xmark {
+    color: #dc3545;
+    display: none;
+}
+
+/* Adjust the validation icon container to match the password toggle positioning */
+.validation-icon-container {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.validation-icon {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Match the positioning with the password toggle */
+.password-toggle,
+.validation-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Ensure consistent sizing between both icons */
+.validation-icon.loading {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #9A60E9;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+}
+
+/* Adjust the validation icon container to position icons lower */
+.validation-icon-container {
+    position: absolute;
+    top: 27%;
+    right: 5px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure the validation icons are positioned lower */
+.validation-icon {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px; /* Move icons slightly down */
+}
+
+/* Match the styles between password toggle and validation icons */
+.password-toggle,
+.validation-icon-container {
+    display: flex;
+    align-items: flex-end; /* Align to bottom instead of center */
+    justify-content: center;
+    padding-bottom: 10px; /* Add padding to position lower */
+}
+
+/* Make the input-with-icons behave like password-field-container */
+.input-with-icons {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+

@@ -87,11 +87,25 @@ label {
     border-radius: 8px;
     font-size: 0.9rem;
     transition: border 0.3s;
+    transition: all 0.3s ease;
 }
 
 .input-field:focus {
     outline: none;
     border-color: #9A60E9;
+}
+
+.input-field.valid {
+    border-color: #9A60E9;
+    background-color: #f5f0ff;
+    box-shadow: 0 0 0 1px rgba(154, 96, 233, 0.2);
+}
+
+.input-field.invalid {
+    border-color: #ff3860;
+    background-color: rgba(255, 56, 96, 0.05);
+    box-shadow: 0 0 0 1px rgba(255, 56, 96, 0.2);
+    animation: errorShake 0.5s;
 }
 
 .error-message {
@@ -327,4 +341,215 @@ label {
     .main-wrapper {
         flex-direction: column;
     }
+}
+
+/* Email validation styling from profile creation page */
+.input-with-icons {
+    position: relative;
+    width: 100%;
+}
+
+/* Purple theme for valid inputs */
+#email.input-field.valid {
+    border-color: #9A60E9;
+    background-color: #f5f0ff;
+    box-shadow: 0 0 0 1px rgba(154, 96, 233, 0.2);
+}
+
+/* Improved icon alignment */
+.validation-icon-container {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.validation-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* Ensure all icons have identical positioning */
+.validation-icon.loading,
+.validation-icon.checkmark,
+.validation-icon.xmark {
+    width: 16px;
+    height: 16px;
+}
+
+/* Specific adjustments for loading icon to match others */
+.validation-icon.loading {
+    border: 2px solid rgba(154, 96, 233, 0.2);
+    border-top: 2px solid #9A60E9;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.validation-icon.checkmark {
+    color: #28a745;
+}
+
+.validation-icon.xmark {
+    color: #dc3545;
+}
+
+/* Display states for validation icons */
+#email.validating ~ .validation-icon-container .validation-icon.loading {
+    display: block;
+    opacity: 1;
+}
+
+#email.valid ~ .validation-icon-container .validation-icon.checkmark {
+    display: block;
+    opacity: 1;
+    animation: scaleIn 0.3s ease-out forwards;
+}
+
+#email.invalid ~ .validation-icon-container .validation-icon.xmark {
+    display: block;
+    opacity: 1;
+    animation: shake 0.5s ease-out forwards;
+}
+
+/* Animation for validation icons */
+@keyframes scaleIn {
+    0% { transform: scale(0); }
+    70% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-2px); }
+    40%, 80% { transform: translateX(2px); }
+}
+
+@keyframes errorShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+}
+
+/* Apply the same validation styles to password field */
+#password.valid {
+    border-color: #9A60E9;
+    background-color: #f5f0ff;
+    box-shadow: 0 0 0 1px rgba(154, 96, 233, 0.2);
+}
+
+#password.invalid {
+    border-color: #ff3860;
+    background-color: rgba(255, 56, 96, 0.05);
+    box-shadow: 0 0 0 1px rgba(255, 56, 96, 0.2);
+    animation: errorShake 0.5s;
+}
+
+/* Perfectly aligned validation icons */
+.validation-icon-container {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.validation-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    display: none;
+    opacity: 0;
+}
+
+/* Make all icons use exact same positioning */
+.validation-icon.loading,
+.validation-icon.checkmark,
+.validation-icon.xmark {
+    width: 16px;
+    height: 16px;
+}
+
+/* Specific styling for loading animation */
+.validation-icon.loading {
+    border: 2px solid rgba(154, 96, 233, 0.2);
+    border-top: 2px solid #9A60E9;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Ensure the email field gets purple border when valid */
+#email.input-field.valid {
+    border-color: #9A60E9 !important;
+    background-color: #f5f0ff !important;
+    box-shadow: 0 0 0 1px rgba(154, 96, 233, 0.2) !important;
+}
+
+#password.valid {
+    border-color: #9A60E9 !important;
+    background-color: #f5f0ff !important;
+    box-shadow: 0 0 0 1px rgba(154, 96, 233, 0.2) !important;
+}
+
+/* Override any other styles for consistent validation */
+.input-field.valid {
+    border-color: #9A60E9 !important;
+    background-color: #f5f0ff !important;
+}
+
+/* Better icon centering */
+.validation-icon-container {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fix loading icon alignment to match other icons */
+.validation-icon.loading {
+    border: 2px solid rgba(154, 96, 233, 0.2);
+    border-top: 2px solid #9A60E9;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+}
+
+.validation-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    display: none;
+    opacity: 0;
+}
+
+/* Ensure loading, checkmark, and xmark share identical positioning */
+.validation-icon.checkmark,
+.validation-icon.xmark {
+    width: 16px;
+    height: 16px;
+    right: 5px;
+    top: 33%;
+    transform: translateY(-50%);
 }

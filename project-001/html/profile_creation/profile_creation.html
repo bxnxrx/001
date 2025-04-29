@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Create Your Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/profile_creation/profile_creation.css" />
+</head>
+<body>
+<main>
+  <!-- Header with navigation and heading image -->
+  <header>
+    <div class="header-left">
+      <svg xmlns="http://www.w3.org/2000/svg" class="back-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+      <h1 class="font-header page-title">Create Your Profile</h1>
+    </div>
+    <img src="../../assests/profile_creation/headingimage.png" alt="Cartoon illustration of a girl with black hair waving" class="header-image" />
+  </header>
+
+  <!-- Main form with two-column layout -->
+  <section class="form-container">
+    <form id="profileForm">
+      <div class="form-row">
+        <div class="form-column">
+          <div class="form-field">
+            <label for="firstName" class="field-label">First Name</label>
+            <input id="firstName" name="firstName" type="text" placeholder="First name" class="field-input" />
+            <div class="error-message" id="firstNameError"></div>
+          </div>
+          <div class="form-field">
+            <label for="username" class="field-label">Pick a Username</label>
+            <div class="input-with-icons">
+              <input id="username" name="username" type="text" placeholder="5 Characters required" class="field-input" />
+              <div class="validation-icon-container">
+                <div class="validation-icon loading"></div>
+                <svg class="validation-icon checkmark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <svg class="validation-icon xmark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              </div>
+            </div>
+            <div class="error-message" id="usernameError"></div>
+          </div>
+          <div class="form-field">
+            <label for="email" class="field-label">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="example@email.com" class="field-input" />
+            <div class="error-message" id="emailError"></div>
+          </div>
+          <div class="form-field">
+            <label for="password" class="field-label">Choose a password</label>
+            <div class="password-field-container">
+              <input id="password" name="password" type="password" placeholder="8 Characters at least 2 Numbers" class="field-input" />
+              <span class="password-toggle" id="passwordToggle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </span>
+            </div>
+            <div class="password-info">
+              <div class="char-count" id="passwordCount">-</div>
+            </div>
+            <div class="error-message" id="passwordError"></div>
+          </div>
+          <div class="form-field">
+            <label for="confirmPassword" class="field-label">Confirm Password</label>
+            <div class="password-field-container">
+              <input id="confirmPassword" name="confirmPassword" type="password" class="field-input" />
+              <span class="password-toggle" id="confirmPasswordToggle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </span>
+            </div>
+            <div class="password-info">
+              <div class="char-count" id="confirmPasswordCount">-</div>
+            </div>
+            <div class="error-message" id="confirmPasswordError"></div>
+          </div>
+        </div>
+        <div class="form-column">
+          <div class="form-field">
+            <label for="lastName" class="field-label">Last Name</label>
+            <input id="lastName" name="lastName" type="text" placeholder="Last name" class="field-input" />
+            <div class="error-message" id="lastNameError"></div>
+          </div>
+          <div class="form-field">
+            <label for="birthday" class="field-label">Birthday</label>
+            <div class="date-field">
+              <input id="birthday" name="birthday" type="text" placeholder="DD-MM-YYYY" class="field-input" />
+              <button type="button" id="datePicker" class="date-picker-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="#9A60E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7a2 2 0 002 2z" />
+                </svg>
+              </button>
+            </div>
+            <div class="error-message" id="birthdayError"></div>
+          </div>
+          <div class="avatar-section">
+            <label class="field-label">Pick an Avatar</label>
+            <div class="avatar-grid">
+              <img src="../../assests/profile_creation/avatarboy.png" alt="Boy Avatar" class="avatar" width="120" height="150" />
+              <img src="../../assests/profile_creation/avatargirl.png" alt="Girl Avatar" class="avatar avatar-selected" width="120" height="150" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="submit-container">
+        <button type="submit" class="submit-button">
+          <span class="btn-text">Submit</span>
+          <span class="spinner-border"></span>
+        </button>
+      </div>
+    </form>
+  </section>
+</main>
+<div id="datePickerModal" class="date-picker-modal">
+  <div class="date-picker-content">
+    <div class="date-picker-header">
+      <div class="date-picker-month-year">
+        <div class="date-picker-month" id="currentMonth">January</div>
+        <div class="date-picker-year" id="currentYear">2023</div>
+      </div>
+      <div class="date-picker-nav">
+        <button id="prevMonth" class="month-nav-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6" /></svg>
+        </button>
+        <button id="nextMonth" class="month-nav-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6" /></svg>
+        </button>
+      </div>
+    </div>
+    <div class="date-picker-calendar">
+      <div class="date-picker-weekdays">
+        <div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div>
+      </div>
+      <div class="date-picker-days" id="calendarDays"></div>
+    </div>
+    <div class="date-picker-actions">
+      <button type="button" id="cancelDate" class="date-action-btn">Cancel</button>
+      <button type="button" id="okDate" class="date-action-btn date-action-primary">OK</button>
+    </div>
+  </div>
+</div>
+  <script src="../../scripts/profile_creation/profile_creation.js"></script>
+</body>
+</html>

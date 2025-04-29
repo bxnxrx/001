@@ -26,7 +26,14 @@
             <!-- User Email Field -->
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" class="input-field" placeholder="Enter your email" required>
+                <div class="input-with-icons">
+                    <input type="email" id="email" class="input-field" placeholder="Enter your email" required>
+                    <div class="validation-icon-container">
+                        <div class="validation-icon loading"></div>
+                        <svg class="validation-icon checkmark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <svg class="validation-icon xmark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </div>
+                </div>
                 <div class="error-message" id="emailError"></div>
             </div>
 
@@ -62,7 +69,7 @@
         <!-- Google Sign-in Option -->
         <button class="google-btn" id="googleButton">
                 <span class="btn-text">
-                    <img src="../../assests/login_page/googleicon.png" alt="Google Logo">
+                    <img src=../../assests/login_page/googleicon.png alt="Google Logo">
                     <span>Login with Google</span>
                 </span>
             <span class="spinner-border" style="display: none;"></span>
