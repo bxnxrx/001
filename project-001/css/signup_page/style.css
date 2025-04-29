@@ -1,29 +1,51 @@
-body {
+/* Reset & Base Styles */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #f8f8f8;
+    box-sizing: border-box;
 }
 
-.signup-container {
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
-    gap: 40px;
+    min-height: 100vh;
 }
 
-.form-section {
-    background: #fff;
-    padding: 40px;
+/* Container */
+.signup-container {
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+/* Form Section */
+.form-section {
+    width: 100%;
+}
+
+.form-content {
+    display: flex;
+    width: 100%;
+}
+
+/* Left Side - Form */
+.form-left {
+    width: 50%;
+    padding-right: 30px;
 }
 
 h2 {
     color: #5c2d91;
     margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 p {
@@ -38,6 +60,7 @@ p a {
     text-decoration: none;
 }
 
+/* Input Fields */
 form input[type="text"],
 form input[type="email"],
 form input[type="date"],
@@ -48,6 +71,7 @@ form input[type="password"] {
     border: none;
     border-radius: 8px;
     background: #f2ebff;
+    font-size: 14px;
 }
 
 .name-fields {
@@ -59,6 +83,7 @@ form input[type="password"] {
     flex: 1;
 }
 
+/* Terms Checkbox */
 .terms {
     display: flex;
     align-items: center;
@@ -75,6 +100,7 @@ form input[type="password"] {
     color: #5c2d91;
 }
 
+/* Create Button */
 .create-account {
     width: 100%;
     background: #9c5eff;
@@ -85,14 +111,18 @@ form input[type="password"] {
     margin-top: 10px;
     font-size: 16px;
     cursor: pointer;
+    text-align: center;
+
 }
 
+/* Divider */
 .or-divider {
     text-align: center;
     margin: 20px 0;
     font-weight: bold;
 }
 
+/* Google Button */
 .google-signin {
     width: 100%;
     padding: 10px;
@@ -110,6 +140,15 @@ form input[type="password"] {
     height: 24px;
 }
 
-.image-section img {
-    width: 250px;
+/* Right Side - Image */
+.form-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-right img {
+    width: 180px;
+    max-width: 100%;
 }
