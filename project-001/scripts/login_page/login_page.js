@@ -16,50 +16,75 @@ document.addEventListener('DOMContentLoaded', function() {
     // Password Visibility Toggle
     passwordToggle.addEventListener('click', function() {
         if (passwordInput.type === 'password') {
+            // Show password
             passwordInput.type = 'text';
             passwordToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>';
+            // Show character count
+            updateCharCount();
         } else {
+            // Hide password
             passwordInput.type = 'password';
             passwordToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>';
+            // Hide character count
+            passwordCount.textContent = '-';
         }
     });
 
     // Password Length Display
     function updateCharCount() {
-        const count = passwordInput.value.length;
-        passwordCount.textContent = count;
-    }
-
-    // Email Field Validation
-    function validateEmail() {
-        if (!emailInput.value.trim()) {
-            emailError.textContent = 'Email is required';
-            emailInput.classList.add('invalid');
-            return false;
-        } else if (!emailRegex.test(emailInput.value)) {
-            emailError.textContent = 'Please enter a valid email address';
-            emailInput.classList.add('invalid');
-            return false;
+        if (passwordInput.type === 'password') {
+            passwordCount.textContent = '-';
         } else {
-            emailError.textContent = '';
-            emailInput.classList.remove('invalid');
-            return true;
+            const count = passwordInput.value.length;
+            passwordCount.textContent = count;
         }
     }
 
-    // Password Field Validation
+    // Initialize with hidden count
+    updateCharCount();
+
+    // Email Field Validation with icons
+    function validateEmail() {
+        emailInput.classList.add('validating');
+        emailInput.classList.remove('valid', 'invalid');
+
+        // Simulate network delay
+        setTimeout(() => {
+            if (!emailInput.value.trim()) {
+                emailError.textContent = 'Email is required';
+                emailInput.classList.remove('validating', 'valid');
+                emailInput.classList.add('invalid');
+                return false;
+            } else if (!emailRegex.test(emailInput.value)) {
+                emailError.textContent = 'Please enter a valid email address';
+                emailInput.classList.remove('validating', 'valid');
+                emailInput.classList.add('invalid');
+                return false;
+            } else {
+                emailError.textContent = '';
+                emailInput.classList.remove('validating', 'invalid');
+                emailInput.classList.add('valid');
+                return true;
+            }
+        }, 600);
+    }
+
+    // Password Field Validation with visual feedback
     function validatePassword() {
         if (!passwordInput.value.trim()) {
             passwordError.textContent = 'Password is required';
+            passwordInput.classList.remove('valid');
             passwordInput.classList.add('invalid');
             return false;
         } else if (passwordInput.value.length < 8) {
             passwordError.textContent = 'Password must be at least 8 characters';
+            passwordInput.classList.remove('valid');
             passwordInput.classList.add('invalid');
             return false;
         } else {
             passwordError.textContent = '';
             passwordInput.classList.remove('invalid');
+            passwordInput.classList.add('valid');
             return true;
         }
     }
