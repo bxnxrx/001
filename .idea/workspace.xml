@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="global html css and home page navigation completed 2">
+    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="made few ux improvements and validation improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-001/assests/upper_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-001/css/home/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/css/home/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-001/html/globle/globle.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/html/globle/globle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-001/css/globle/globle.css" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/css/globle/globle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-001/html/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/html/home/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +30,15 @@
     &quot;assignee&quot;: &quot;bxnxrx&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/bxnxrx/001.git",
-    "accountId": "81ada444-b688-4aa5-b406-04e992fadf7e"
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="644fc03c-0228-454c-aa04-15defd1d332d" />
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/bxnxrx/001.git&quot;,
+    &quot;accountId&quot;: &quot;7b1b9156-e523-4437-b79a-b452f6af8555&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -108,7 +109,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
       </set>
     </attachedChunks>
   </component>
@@ -132,7 +133,7 @@
       <workItem from="1745875099489" duration="1105000" />
       <workItem from="1745876254915" duration="105000" />
       <workItem from="1745876397784" duration="466000" />
-      <workItem from="1745937929526" duration="4701000" />
+      <workItem from="1745946796247" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="ff">
       <option name="closed" value="true" />
@@ -270,23 +271,7 @@
       <option name="project" value="LOCAL" />
       <updated>1745930045960</updated>
     </task>
-    <task id="LOCAL-00018" summary="global html css and home page navigation completed">
-      <option name="closed" value="true" />
-      <created>1745939854741</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1745939854741</updated>
-    </task>
-    <task id="LOCAL-00019" summary="global html css and home page navigation completed 2">
-      <option name="closed" value="true" />
-      <created>1745939932195</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1745939932195</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,8 +296,6 @@
     <MESSAGE value="chat ui stage 2 done" />
     <MESSAGE value="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done." />
     <MESSAGE value="made few ux improvements and validation improvements" />
-    <MESSAGE value="global html css and home page navigation completed" />
-    <MESSAGE value="global html css and home page navigation completed 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="global html css and home page navigation completed 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="made few ux improvements and validation improvements" />
   </component>
 </project>
