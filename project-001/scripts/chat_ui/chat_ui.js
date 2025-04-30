@@ -41,3 +41,16 @@ toggle.addEventListener('change', () => {
         toggleIcon.src = '.../../assests/ayya_chat_ui_upper.png';
     }
 });
+
+// Set default (Ayya mode) visuals on initial load
+window.addEventListener('DOMContentLoaded', () => {
+    chatHeader.style.backgroundColor = '#6488a7';
+    modeTitle.textContent = 'Ayya mode';
+    modeDesc.textContent = 'කියන්න මචන්';
+    modeAvatar.src = '../../assests/ayya_chat_ui_upper.png';
+    avatarImg.src = '../../assests/ayya_giantavatar_chat_ui.png';
+    botMessage.textContent = 'Machan, what\'s on your mind today?';
+    botMessage.style.backgroundColor = '#6488a7';
+    newChatBtn.style.backgroundColor = '#6488a7';
+    toggleIcon.src = '../../assests/ayya_chat_ui_upper.png';
+});
