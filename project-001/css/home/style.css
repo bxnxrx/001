@@ -31,7 +31,9 @@
     background-color:black;
 }
 .tile-container {
-    margin-left: 300px;
+
+    width: 100%;
+    margin-left: 250px;
     align-items: center;
     margin-top: 100px;
     display: grid;
