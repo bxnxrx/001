@@ -55,4 +55,111 @@
     width: 130px;
     height: auto; /* Maintains aspect ratio */
 }
-/* Apply Luckiest Guy to headings and buttons */
+.section-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+.chat-left, .chat-right {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.chat-left {
+    flex-direction: row;
+}
+
+.chat-right {
+    flex-direction: row-reverse;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+}
+/*----------------------------------*/
+.card-container {
+    margin-top: 50px;
+    background: #f7f2ff;
+    border-radius: 20px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    position: relative;
+    width: 1000px;
+    height: 300px;
+    border: solid 5px lightgray;
+}
+
+.arrow {
+    font-size: 40px;
+    font-weight: bold;
+    color: #9a70f5;
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrow.left {
+    margin-right: 60px;
+}
+
+.arrow.right {
+    margin-left: 60px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 90px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: solid 2px lightgray;
+}
+
+.testimonial-content {
+    margin-left: 50px;
+    width: 400px;
+    font-size: 16px;
+    color: #333;
+}
+
+.testimonial-content p {
+    margin: 0;
+    text-align: center;
+}
+
+.testimonial-content .author {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #d2bdf4;
+    margin: 0 4px;
+}
+
+.dot.active {
+    background-color: #9a70f5;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
