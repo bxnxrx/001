@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+section {
+    padding: 60px 0;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -38,9 +41,9 @@ button {
 
 /* Layout */
 .container {
-    max-width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 24px;
+
 }
 
 /* Header */
@@ -83,36 +86,6 @@ header {
     justify-content: center;
     height: 100%;
 }
-
-nav {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-nav > * {
-    margin-left: 32px;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.dropdown {
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.dropdown i {
-    margin-left: 4px;
-    font-size: 0.75rem;
-    display: flex;
-    align-items: center;
-}
-
 /* Hero Section */
 .hero {
     display: flex;
@@ -812,42 +785,4 @@ svg {
     z-index: 1;
 }
 
-/* New navbar and footer styles */
-.navbar {
-    background-color: white;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 900;
-}
-.nav-links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.nav-links li {
-    margin: 0 10px;
-}
-.nav-links a {
-    text-decoration: none;
-    color: black;
-    padding: 10px 15px;
-    transition: background 0.3s;
-    font-weight: normal;
-    margin-right: 20px;
-}
-.nav-links a:hover {
-    background-color: #9A60E9;
-    border-radius: 5px;
-}
-.navbar img {
-    width: 65px;
-    height: 60px;
-    margin-left: 30px;
-}
+

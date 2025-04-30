@@ -1,35 +1,55 @@
-
-.title-section{
+.title-section {
     margin-left: 10%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5%;
 }
+
+.title-content {
+    flex: 1;
+}
+
 .title-section h1 {
-    font-family: Luckiest Guy, Helvetica, sans-serif;
-    margin-top: 10%;
-    font-size: 50px;
+    font-family: 'Luckiest Guy', Helvetica, sans-serif;
+    font-size: 80px;
     font-weight: bold;
-    text-align: left;
     line-height: 1.5;
+    text-align: left;
+    margin: 0;
 }
-.title-section p{
-    font-size: 20px;
-    padding-bottom: 40px;
+
+.title-section p {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
-.title-section a{
-    font-family: Luckiest Guy, Helvetica, sans-serif;
+
+.title-section .btn {
+    font-family: 'Luckiest Guy', Helvetica, sans-serif;
     text-decoration: none;
     color: white;
-    font-size: 26px;
-    padding: 10px 15px;
-    transition: background 0.5s;
-    font-weight:normal;
-    margin-right: 20px;
-    background-color:#9A60E9;
+    font-size: 20px;
+    padding: 12px 20px;
+    background-color: #9A60E9;
     border-radius: 10px;
+    transition: background 0.3s;
+    display: inline-block;
     font-weight: bold;
 }
-.title-section a:hover {
-    background-color:black;
+
+.title-section .btn:hover {
+    background-color: black;
 }
+
+.title-image {
+    max-width: 500px;
+    margin-left: 5%;
+}
+
 .tile-container {
 
     width: 100%;
