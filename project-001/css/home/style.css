@@ -123,19 +123,21 @@
 
 .testimonial-content {
     margin-left: 50px;
-    width: 300px;
+    width: 400px;
     font-size: 16px;
     color: #333;
 }
 
 .testimonial-content p {
     margin: 0;
+    text-align: center;
 }
 
 .testimonial-content .author {
     margin-top: 10px;
     font-weight: bold;
     color: #333;
+    text-align: center;
 }
 
 .dots {
