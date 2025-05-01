@@ -9,6 +9,7 @@ html, body {
     flex-direction: column;
     font-family: Poppins, Helvetica, sans-serif;
     padding: 0;
+    overflow-x: hidden;
 }
 .navbar{
     background-color: white;
