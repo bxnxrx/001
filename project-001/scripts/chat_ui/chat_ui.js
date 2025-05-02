@@ -54,3 +54,42 @@ window.addEventListener('DOMContentLoaded', () => {
     newChatBtn.style.backgroundColor = '#6488a7';
     toggleIcon.src = '../../assests/ayya_chat_ui_upper.png';
 });
+
+
+const sendBtn = document.getElementById('send-btn');
+const userInput = document.getElementById('user-input');
+
+sendBtn.addEventListener('click', async () => {
+    const message = userInput.value.trim();
+    if (!message) return;
+
+    // Display user message
+    const userDiv = document.createElement('div');
+    userDiv.className = 'user-message';
+    userDiv.textContent = message;
+    chatMessages.appendChild(userDiv);
+
+    userInput.value = '';
+
+    try {
+        const response = await fetch('http://localhost:5000/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message })
+        });
+
+        const data = await response.json();
+
+        const botDiv = document.createElement('div');
+        botDiv.className = 'bot-message';
+        botDiv.textContent = data.reply;
+        chatMessages.appendChild(botDiv);
+
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    } catch (error) {
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'bot-message error';
+        errorDiv.textContent = 'Error: ' + error.message;
+        chatMessages.appendChild(errorDiv);
+    }
+});

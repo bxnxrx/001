@@ -207,3 +207,31 @@ input:checked + .slider:before {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.user-message {
+    background-color: #d1ecf1; /* Light blue for user messages */
+    color: #000;
+    padding: 10px 14px;
+    border-radius: 18px;
+    max-width: 70%;
+    margin: 10px 0;
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 10px;
+    text-align: right;
+}
+.bot-message {
+    background-color: #6488a7;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 18px;
+    max-width: 70%;
+    margin: 10px 0;
+    align-self: flex-start;
+    margin-right: auto;
+    margin-left: 10px;
+    text-align: left;
+}
+#chat-messages {
+    display: flex;
+    flex-direction: column;
+}
