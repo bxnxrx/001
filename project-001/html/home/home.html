@@ -1,77 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home Page</title>
-    <link rel="stylesheet" href="../../../project-001/css/home/style.css">
-    <link rel="stylesheet" href="../../../project-001/css/globle/globle.css">
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-
+    <title>Ayya Says - Akka Knows</title>
+    <link rel="stylesheet" href="../../css/home/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <img src="../../assests/upper_logo.png.png" alt="logo" id="logo-img">
-        <ul class="nav-links" >
-            <li><a href="../../html/Error_Page/Error_Page.html">Products</a></li>
-            <li><a href="../../html/About_Us/About_Us.html">About</a></li>
-            <li><a href="../../html/login_page/login_page.html">Log In</a></li>
-            <li><a href="../../html/signup_page/signup_page.html">Sign Up</a></li>
-        </ul>
-    </nav>
-    <section class="title-section">
-        <div class="title-content">
-            <h1>GOT A QUESTION?<br>AYYA ANSWERS-<br>AKKA KNOWS!</h1>
-            <p>Clever, sarcastic and real - just like your real life sibs</p>
-            <a href="../../../project-001/html/chat_ui/chat_ui.html" class="btn">Start Chatting</a>
-        </div>
-        <img src="../../../project-001/assests/logo.png" alt="logo" class="title-image">
-    </section>
+<nav class="navbar">
+    <div class="logo">
+        <img src="assets/upper_logo.png" alt="Ayya Says Akka Knows logo" id="logo-img">
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Sign Up</a></li>
+    </ul>
+</nav>
 
+<section class="title-section">
+    <div class="title-content">
+        <h1>GOT A QUESTION?<br>AYYA ANSWERS-<br>AKKA KNOWS!</h1>
+        <p>Clever, sarcastic and real - just like your real life sibs</p>
+        <a href="#" class="btn">Start Chatting</a>
+    </div>
+    <div class="title-image-container">
+        <img src="assets/logo.png" alt="Ayya and Akka characters" class="title-image">
+    </div>
+</section>
+
+<section class="faq-section">
+    <div class="faq-container">
+        <div class="faq-placeholder">
+            <svg width="300" height="300" viewBox="0 0 300 300">
+                <rect width="300" height="300" rx="20" fill="#FFD7D7" />
+            </svg>
+        </div>
+        <div class="faq-content">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Stay connected to your personal life</h3>
+                    <button class="toggle-btn plus">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#2A2A2A"/>
+                            <path d="M12 7V17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12H17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Our platform helps you navigate your personal challenges with advice from our AI siblings. We offer personalized guidance that feels like talking to your actual brother or sister!</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What makes our platform different from others on the market?</h3>
+                    <button class="toggle-btn minus">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#2A2A2A"/>
+                            <path d="M7 12H17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-answer active">
+                    <p>Our platform offers unparalleled real-time analytics, intuitive interfaces, and customizable features designed specifically for Sri Lankan youth. We prioritize user experience and efficiency, ensuring that our solution adapts to your unique needs with cultural relevance and understanding of local contexts.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I get advice in my native language?</h3>
+                    <button class="toggle-btn plus">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#2A2A2A"/>
+                            <path d="M12 7V17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12H17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! Our platform supports English, Sinhala, and even a natural mix of both languages. We understand the way Sri Lankan youth actually communicate and can respond in the same style.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features-section">
     <div class="tile-container">
         <div class="tile">
-        <h3>Powered by AI</h3>
-        <p>Personalized<br><br> Answers <br><br> simplicity</p>
+            <div class="tile-icon">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="30" cy="30" r="30" fill="#9A60E9"/>
+                    <path d="M30 15C22.5 15 15 21 15 30C15 39 22.5 45 30 45C37.5 45 45 39 45 30C45 21 37.5 15 30 15ZM30 25C32.5 25 34.5 27 34.5 29.5C34.5 32 32.5 34 30 34C27.5 34 25.5 32 25.5 29.5C25.5 27 27.5 25 30 25Z" fill="white"/>
+                </svg>
+            </div>
+            <h3>Powered by AI</h3>
+            <p>Personalized Answers</p>
+            <p>Simplicity</p>
         </div>
         <div class="tile">
-        <h3>Multi Language</h3>
-        <p>English<br><br>sinhala<br><br>English and sinhala<br><br> (Mix)</p>
+            <div class="tile-icon">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="30" cy="30" r="30" fill="#9A60E9"/>
+                    <path d="M22 20H38V24H22V20ZM18 26H42V30H18V26ZM24 32H36V36H24V32ZM20 38H40V42H20V38Z" fill="white"/>
+                </svg>
+            </div>
+            <h3>Multi Language</h3>
+            <p>English</p>
+            <p>Sinhala</p>
+            <p>English and Sinhala (Mix)</p>
         </div>
         <div class="tile">
-            <p>Built just for<br><br> Sri Lankan youth
-            </p>
+            <div class="tile-icon">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="30" cy="30" r="30" fill="#FF6B4A"/>
+                    <path d="M30 15C35 20 40 22.5 40 30C40 37.5 35 45 30 45C25 45 20 37.5 20 30C20 22.5 25 20 30 15Z" fill="white"/>
+                </svg>
+            </div>
+            <h3>Built just for</h3>
+            <p>Sri Lankan youth</p>
         </div>
     </div>
-    <div class="main-wrapper">
-        <div class="card-container">
-            <div class="arrow left">&#8592;</div>
-            <img class="profile-img" src="your-image.jpg" alt="Profile" />
-            <div class="testimonial-content">
-                <p>“Akka’s advice saved<br>my crush from<br>ghosting me.”</p>
-                <div class="author">-sadeepa</div>
-            </div>
-            <div class="arrow right">&#8594;</div>
-        </div>
+</section>
 
-        <div class="dots">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+<section class="testimonial-section">
+    <div class="testimonial-container">
+        <button class="arrow left" id="prev-testimonial">&#8592;</button>
+        <div class="testimonial-wrapper">
+            <div class="testimonial-slide active" data-index="0">
+                <div class="testimonial-image">
+                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="60" cy="60" r="60" fill="#9A60E9" opacity="0.2"/>
+                        <circle cx="60" cy="60" r="50" fill="#9A60E9"/>
+                    </svg>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Akka's advice from ghosting me."</p>
+                    <div class="author">-Dinuka</div>
+                </div>
+            </div>
+            <div class="testimonial-slide" data-index="1">
+                <div class="testimonial-image">
+                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="60" cy="60" r="60" fill="#FF6B4A" opacity="0.2"/>
+                        <circle cx="60" cy="60" r="50" fill="#FF6B4A"/>
+                    </svg>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Ayya helped me navigate university life when I felt lost."</p>
+                    <div class="author">-Malini</div>
+                </div>
+            </div>
+            <div class="testimonial-slide" data-index="2">
+                <div class="testimonial-image">
+                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="60" cy="60" r="60" fill="#4AC6FF" opacity="0.2"/>
+                        <circle cx="60" cy="60" r="50" fill="#4AC6FF"/>
+                    </svg>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Finally someone who understands Singlish and gives practical advice!"</p>
+                    <div class="author">-Ravi</div>
+                </div>
+            </div>
+            <div class="testimonial-slide" data-index="3">
+                <div class="testimonial-image">
+                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="60" cy="60" r="60" fill="#4AFF91" opacity="0.2"/>
+                        <circle cx="60" cy="60" r="50" fill="#4AFF91"/>
+                    </svg>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Akka guided me through my first job interview with perfect advice."</p>
+                    <div class="author">-Chamara</div>
+                </div>
+            </div>
+            <div class="testimonial-slide" data-index="4">
+                <div class="testimonial-image">
+                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="60" cy="60" r="60" fill="#FFD74A" opacity="0.2"/>
+                        <circle cx="60" cy="60" r="50" fill="#FFD74A"/>
+                    </svg>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Best relationship advice that actually works for Sri Lankan dating culture!"</p>
+                    <div class="author">-Nisha</div>
+                </div>
+            </div>
+        </div>
+        <button class="arrow right" id="next-testimonial">&#8594;</button>
+    </div>
+    <div class="dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+        <span class="dot" data-index="4"></span>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <p>@2025</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Contact</a>
+            <a href="#">About Us</a>
         </div>
     </div>
+</footer>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-content">
-                <p>@2025</p>
-            </div>
-            <div class="footer-links">
-                <a href="../../html/Error_Page/Error_Page.html">Privacy</a>
-                <a href="../../html/Error_Page/Error_Page.html">Contact</a>
-                <a href="../../html/About_Us/About_Us.html">About Us</a>
-            </div>
-        </div>
-    </footer>
+<script src="../../scripts/home/home.js"></script>
 </body>
 </html>
