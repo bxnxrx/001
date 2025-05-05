@@ -235,3 +235,7 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: column;
 }
+.bot-message.thinking {
+    font-style: italic;
+    opacity: 0.7;
+}
