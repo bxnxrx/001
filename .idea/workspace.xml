@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="chat send msg and get msges functionality upadated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-001/css/chat_ui/chat_ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/css/chat_ui/chat_ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-001/scripts/chat_ui/chat_ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/scripts/chat_ui/chat_ui.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
