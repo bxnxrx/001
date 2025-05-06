@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="nothing">
+    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="chat send msg and get msges functionality upadated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,13 +28,10 @@
     &quot;assignee&quot;: &quot;bxnxrx&quot;
   }
 }</component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="644fc03c-0228-454c-aa04-15defd1d332d" />
-  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/bxnxrx/001.git&quot;,
-    &quot;accountId&quot;: &quot;7b1b9156-e523-4437-b79a-b452f6af8555&quot;
+    &quot;accountId&quot;: &quot;81ada444-b688-4aa5-b406-04e992fadf7e&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -68,6 +65,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -107,7 +105,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
       </set>
     </attachedChunks>
   </component>
@@ -132,8 +130,22 @@
       <workItem from="1745876254915" duration="105000" />
       <workItem from="1745876397784" duration="466000" />
       <workItem from="1745946796247" duration="306000" />
-      <workItem from="1746465561530" duration="2095000" />
-      <workItem from="1746545965967" duration="3672000" />
+      <workItem from="1745993576522" duration="3633000" />
+      <workItem from="1746027527770" duration="518000" />
+      <workItem from="1746028965117" duration="2988000" />
+      <workItem from="1746038878896" duration="41000" />
+      <workItem from="1746085336800" duration="2260000" />
+      <workItem from="1746095379073" duration="1235000" />
+      <workItem from="1746097328891" duration="6211000" />
+      <workItem from="1746175086158" duration="2814000" />
+      <workItem from="1746194728215" duration="1954000" />
+      <workItem from="1746207444565" duration="1032000" />
+      <workItem from="1746210426669" duration="3270000" />
+      <workItem from="1746261242190" duration="5742000" />
+      <workItem from="1746279946286" duration="4511000" />
+      <workItem from="1746296802700" duration="81000" />
+      <workItem from="1746459703970" duration="717000" />
+      <workItem from="1746460437530" duration="2096000" />
     </task>
     <task id="LOCAL-00001" summary="ff">
       <option name="closed" value="true" />
@@ -271,19 +283,38 @@
       <option name="project" value="LOCAL" />
       <updated>1745930045960</updated>
     </task>
-    <task id="LOCAL-00018" summary="nothing">
+    <task id="LOCAL-00018" summary="chat ui image bug fixed">
       <option name="closed" value="true" />
-      <created>1746549798441</created>
+      <created>1745996064867</created>
       <option name="number" value="00018" />
       <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1746549798441</updated>
+      <updated>1745996064867</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="chat ui image bug fixed">
+      <option name="closed" value="true" />
+      <created>1746027934196</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1746027934196</updated>
+    </task>
+    <task id="LOCAL-00020" summary="chat send msg and get msges functionality upadated">
+      <option name="closed" value="true" />
+      <created>1746177430811</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1746177430811</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -304,7 +335,8 @@
     <MESSAGE value="chat ui stage 2 done" />
     <MESSAGE value="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done." />
     <MESSAGE value="made few ux improvements and validation improvements" />
-    <MESSAGE value="nothing" />
-    <option name="LAST_COMMIT_MESSAGE" value="nothing" />
+    <MESSAGE value="chat ui image bug fixed" />
+    <MESSAGE value="chat send msg and get msges functionality upadated" />
+    <option name="LAST_COMMIT_MESSAGE" value="chat send msg and get msges functionality upadated" />
   </component>
 </project>

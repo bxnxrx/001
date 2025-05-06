@@ -1,22 +1,3 @@
-Index: project-001/html/home/home.html
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
-<+><!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n\t<title>Home Page</title>\r\n    <link rel=\"stylesheet\" href=\"../../../project-001/css/home/style.css\">\r\n    <link rel=\"stylesheet\" href=\"../../../project-001/css/globle/globle.css\">\r\n</head>\r\n<body>\r\n    <nav class=\"navbar\">\r\n        <img src=\"\">\r\n        <ul class=\"nav-links\">\r\n            <li><a href=\"products.html\">Products</a></li>\r\n            <li><a href=\"about.html\">About</a></li>\r\n            <li><a href=\"login.html\">Log In</a></li>\r\n            <li><a href=\"signup.html\">Sign Up</a></li>\r\n        </ul>\r\n    </nav>\r\n    <section class=\"title-section\">\r\n        <h1>GOT A QUESTION?<br>AYYA ANSWERS-<br>AKKA KNOWS!</h1>\r\n        <p>Clever, sarcastic and real - just like your real life sibs</p>\r\n        <a href=\"../../../project-001/html/chat_ui/chat_ui.html\" class=\"btn\">Start Chatting</a>\r\n    </section>\r\n\r\n    <div class=\"tile-container\">\r\n        <div class=\"tile\">\r\n        <h3>Powered by AI</h3>\r\n        <p>Personalized<br><br> Answers <br><br> simplicity</p>\r\n        </div>\r\n        <div class=\"tile\">\r\n        <h3>Multi Language</h3>\r\n        <p>English<br><br>sinhala<br><br>English and sinhala<br><br> (Mix)</p>\r\n        </div>\r\n        <div class=\"tile\">\r\n            <p>Built just for<br><br> Sri Lankan youth\r\n            </p>\r\n        </div>\r\n    </div>\r\n\r\n<footer>\r\n    <div class=\"footer-links\">\r\n        <a href=\"\">Privacy</a>\r\n        <a href=\"\">Contact</a>\r\n        <a href=\"\">About Us</a>\r\n    </div>\r\n</footer>\r\n\r\n</body>\r\n</html>
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/project-001/html/home/home.html b/project-001/html/home/home.html
---- a/project-001/html/home/home.html	(revision ddf1bb18507c579eed7bdcaeac7348a13039d928)
-+++ b/project-001/html/home/home.html	(date 1745935078206)
-@@ -11,7 +11,7 @@
-     <nav class="navbar">
-         <img src="">
-         <ul class="nav-links">
--            <li><a href="products.html">Products</a></li>
-+            <li><a href="../../../project-001/html//globle.css">Products</a></li>
-             <li><a href="about.html">About</a></li>
-             <li><a href="login.html">Log In</a></li>
-             <li><a href="signup.html">Sign Up</a></li>
 Index: .idea/workspace.xml
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
@@ -25,212 +6,120 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/.idea/workspace.xml b/.idea/workspace.xml
---- a/.idea/workspace.xml	(revision ddf1bb18507c579eed7bdcaeac7348a13039d928)
-+++ b/.idea/workspace.xml	(date 1745936791329)
-@@ -4,11 +4,9 @@
+--- a/.idea/workspace.xml	(revision 677afa301547b59ebbd95ce1827a3fdb770b7677)
++++ b/.idea/workspace.xml	(date 1746012174267)
+@@ -4,11 +4,8 @@
      <option name="autoReloadType" value="SELECTIVE" />
    </component>
    <component name="ChangeListManager">
 -    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="made few ux improvements and validation improvements">
-+    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="tiles and css updated">
++    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="profile creation page is done. added improvements in css stylings, has to clarify minor things bout js, did improve the login page's stylings too focused on small details of both and js validations">
        <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 -      <change beforePath="$PROJECT_DIR$/project-001/html/Error_Page/Error_Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/html/Error_Page/Error_Page.html" afterDir="false" />
 -      <change beforePath="$PROJECT_DIR$/project-001/html/login_page/login_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/html/login_page/login_page.html" afterDir="false" />
 -      <change beforePath="$PROJECT_DIR$/project-001/html/profile_creation/profile_creation.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/html/profile_creation/profile_creation.html" afterDir="false" />
-+      <change beforePath="$PROJECT_DIR$/project-001/html/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/html/home/home.html" afterDir="false" />
      </list>
      <option name="SHOW_DIALOG" value="false" />
      <option name="HIGHLIGHT_CONFLICTS" value="true" />
-@@ -31,15 +29,15 @@
-     &quot;assignee&quot;: &quot;bxnxrx&quot;
-   }
- }</component>
-+  <component name="GithubDefaultAccount">
-+    <option name="defaultAccountId" value="644fc03c-0228-454c-aa04-15defd1d332d" />
-+  </component>
-   <component name="GithubPullRequestsUISettings">{
-   &quot;selectedUrlAndAccountId&quot;: {
-     &quot;url&quot;: &quot;https://github.com/bxnxrx/001.git&quot;,
--    &quot;accountId&quot;: &quot;7b1b9156-e523-4437-b79a-b452f6af8555&quot;
-+    &quot;accountId&quot;: &quot;81ada444-b688-4aa5-b406-04e992fadf7e&quot;
-   }
- }</component>
--  <component name="ProblemsViewState">
--    <option name="selectedTabId" value="CurrentFile" />
--  </component>
-   <component name="ProjectColorInfo">{
-   &quot;associatedIndex&quot;: 8
- }</component>
-@@ -54,15 +52,11 @@
-   <component name="PropertiesComponent">{
+@@ -55,14 +52,20 @@
    &quot;keyToString&quot;: {
      &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
--    &quot;JavaScript Debug.Error_Page.html.executor&quot;: &quot;Run&quot;,
+     &quot;JavaScript Debug.Error_Page.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.Profile_CardPage.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.about_us.html.executor&quot;: &quot;Run&quot;,
      &quot;JavaScript Debug.chat_page.html.executor&quot;: &quot;Run&quot;,
--    &quot;JavaScript Debug.login_page.html.executor&quot;: &quot;Run&quot;,
--    &quot;JavaScript Debug.splash_screen.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.globle.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.home.html.executor&quot;: &quot;Run&quot;,
+     &quot;JavaScript Debug.login_page.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.profile_creation.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.signup_page.html.executor&quot;: &quot;Run&quot;,
+     &quot;JavaScript Debug.splash_screen.html.executor&quot;: &quot;Run&quot;,
      &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
      &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
      &quot;git-widget-placeholder&quot;: &quot;main&quot;,
--    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
 -    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sanjula/WebstormProjects/005/project-001/css/login_page&quot;,
-+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Binara/WebstormProjects/001/project-001/assests&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sanjula/WebstormProjects/005/project-001/assests/about_us&quot;,
      &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
      &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
      &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-@@ -73,41 +67,16 @@
+@@ -73,6 +76,7 @@
  }</component>
    <component name="RecentsManager">
      <key name="CopyFile.RECENT_KEYS">
--      <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\css\login_page" />
--      <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\assests\login_page" />
++      <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\assests\about_us" />
+       <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\css\login_page" />
+       <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\assests\login_page" />
+       <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
+@@ -82,25 +86,29 @@
        <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
      </key>
-     <key name="MoveFile.RECENT_KEYS">
--      <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\assests\login_page" />
-       <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
-     </key>
--  </component>
+   </component>
 -  <component name="RunManager" selected="JavaScript Debug.login_page.html">
 -    <configuration name="Error_Page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/Error_Page/Error_Page.html" useBuiltInWebServerPort="true">
--      <method v="2" />
--    </configuration>
++  <component name="RunManager" selected="JavaScript Debug.about_us.html">
++    <configuration name="Profile_CardPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/Profile_CardPage/Profile_CardPage.html" useBuiltInWebServerPort="true">
++      <method v="2" />
++    </configuration>
++    <configuration name="about_us.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/about_us/about_us.html" useBuiltInWebServerPort="true">
+       <method v="2" />
+     </configuration>
 -    <configuration name="chat_page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/chat_page/chat_page.html" useBuiltInWebServerPort="true">
--      <method v="2" />
--    </configuration>
--    <configuration name="login_page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/login_page/login_page.html" useBuiltInWebServerPort="true">
--      <method v="2" />
--    </configuration>
++    <configuration name="globle.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/globle/globle.html" useBuiltInWebServerPort="true">
+       <method v="2" />
+     </configuration>
+     <configuration name="login_page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/login_page/login_page.html" useBuiltInWebServerPort="true">
+       <method v="2" />
+     </configuration>
 -    <configuration name="splash_screen.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/splash_screen/splash_screen.html" useBuiltInWebServerPort="true">
--      <method v="2" />
--    </configuration>
--    <recent_temporary>
--      <list>
--        <item itemvalue="JavaScript Debug.login_page.html" />
++    <configuration name="profile_creation.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/profile_creation/profile_creation.html" useBuiltInWebServerPort="true">
+       <method v="2" />
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="JavaScript Debug.about_us.html" />
+         <item itemvalue="JavaScript Debug.login_page.html" />
 -        <item itemvalue="JavaScript Debug.splash_screen.html" />
 -        <item itemvalue="JavaScript Debug.chat_page.html" />
 -        <item itemvalue="JavaScript Debug.Error_Page.html" />
--      </list>
--    </recent_temporary>
++        <item itemvalue="JavaScript Debug.profile_creation.html" />
++        <item itemvalue="JavaScript Debug.Profile_CardPage.html" />
++        <item itemvalue="JavaScript Debug.globle.html" />
+       </list>
+     </recent_temporary>
    </component>
-   <component name="SharedIndexes">
-     <attachedChunks>
-       <set>
--        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
-+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
-       </set>
-     </attachedChunks>
-   </component>
-@@ -124,13 +93,7 @@
-       <workItem from="1745850339585" duration="737000" />
-       <workItem from="1745852848824" duration="2642000" />
-       <workItem from="1745856479261" duration="359000" />
--      <workItem from="1745857112023" duration="5801000" />
--      <workItem from="1745874281027" duration="61000" />
--      <workItem from="1745874362463" duration="419000" />
--      <workItem from="1745874799401" duration="269000" />
--      <workItem from="1745875099489" duration="1105000" />
--      <workItem from="1745876254915" duration="105000" />
--      <workItem from="1745876397784" duration="466000" />
-+      <workItem from="1745857112023" duration="4106000" />
+@@ -131,6 +139,7 @@
+       <workItem from="1745875099489" duration="1105000" />
+       <workItem from="1745876254915" duration="105000" />
+       <workItem from="1745876397784" duration="466000" />
++      <workItem from="1745938734021" duration="5726000" />
      </task>
      <task id="LOCAL-00001" summary="ff">
        <option name="closed" value="true" />
-@@ -204,71 +167,31 @@
+@@ -268,7 +277,15 @@
        <option name="project" value="LOCAL" />
-       <updated>1745855312197</updated>
+       <updated>1745930045960</updated>
      </task>
--    <task id="LOCAL-00010" summary="chat ui stage 1 done">
-+    <task id="LOCAL-00010" summary="First section filled">
-       <option name="closed" value="true" />
--      <created>1745861861718</created>
-+      <created>1745922498004</created>
-       <option name="number" value="00010" />
-       <option name="presentableId" value="LOCAL-00010" />
-       <option name="project" value="LOCAL" />
--      <updated>1745861861718</updated>
-+      <updated>1745922498004</updated>
-     </task>
--    <task id="LOCAL-00011" summary="chat ui stage 2 done">
-+    <task id="LOCAL-00011" summary="globle css, start chat button connected">
-       <option name="closed" value="true" />
--      <created>1745863258617</created>
-+      <created>1745923648096</created>
-       <option name="number" value="00011" />
-       <option name="presentableId" value="LOCAL-00011" />
-       <option name="project" value="LOCAL" />
--      <updated>1745863258617</updated>
-+      <updated>1745923648096</updated>
-     </task>
--    <task id="LOCAL-00012" summary="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
-+    <task id="LOCAL-00012" summary="tiles and css updated">
-       <option name="closed" value="true" />
--      <created>1745875193698</created>
-+      <created>1745934601631</created>
-       <option name="number" value="00012" />
-       <option name="presentableId" value="LOCAL-00012" />
-       <option name="project" value="LOCAL" />
--      <updated>1745875193698</updated>
--    </task>
--    <task id="LOCAL-00013" summary="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
--      <option name="closed" value="true" />
--      <created>1745875584206</created>
--      <option name="number" value="00013" />
--      <option name="presentableId" value="LOCAL-00013" />
--      <option name="project" value="LOCAL" />
--      <updated>1745875584206</updated>
--    </task>
--    <task id="LOCAL-00014" summary="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
--      <option name="closed" value="true" />
--      <created>1745875808144</created>
--      <option name="number" value="00014" />
--      <option name="presentableId" value="LOCAL-00014" />
--      <option name="project" value="LOCAL" />
--      <updated>1745875808144</updated>
--    </task>
--    <task id="LOCAL-00015" summary="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
--      <option name="closed" value="true" />
--      <created>1745876089774</created>
--      <option name="number" value="00015" />
--      <option name="presentableId" value="LOCAL-00015" />
--      <option name="project" value="LOCAL" />
--      <updated>1745876089774</updated>
--    </task>
--    <task id="LOCAL-00016" summary="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.">
--      <option name="closed" value="true" />
--      <created>1745876335453</created>
--      <option name="number" value="00016" />
--      <option name="presentableId" value="LOCAL-00016" />
--      <option name="project" value="LOCAL" />
--      <updated>1745876335453</updated>
-+      <updated>1745934601631</updated>
-     </task>
--    <task id="LOCAL-00017" summary="made few ux improvements and validation improvements">
--      <option name="closed" value="true" />
--      <created>1745930045960</created>
--      <option name="number" value="00017" />
--      <option name="presentableId" value="LOCAL-00017" />
--      <option name="project" value="LOCAL" />
--      <updated>1745930045960</updated>
--    </task>
 -    <option name="localTasksCounter" value="18" />
-+    <option name="localTasksCounter" value="13" />
++    <task id="LOCAL-00018" summary="profile creation page is done. added improvements in css stylings, has to clarify minor things bout js, did improve the login page's stylings too focused on small details of both and js validations">
++      <option name="closed" value="true" />
++      <created>1745930798026</created>
++      <option name="number" value="00018" />
++      <option name="presentableId" value="LOCAL-00018" />
++      <option name="project" value="LOCAL" />
++      <updated>1745930798026</updated>
++    </task>
++    <option name="localTasksCounter" value="19" />
      <servers />
    </component>
    <component name="TypeScriptGeneratedFilesManager">
-@@ -289,10 +212,9 @@
-     <MESSAGE value="ff" />
-     <MESSAGE value="2" />
-     <MESSAGE value="jjjj" />
--    <MESSAGE value="chat ui stage 1 done" />
--    <MESSAGE value="chat ui stage 2 done" />
--    <MESSAGE value="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done." />
--    <MESSAGE value="made few ux improvements and validation improvements" />
+@@ -293,6 +310,7 @@
+     <MESSAGE value="chat ui stage 2 done" />
+     <MESSAGE value="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done." />
+     <MESSAGE value="made few ux improvements and validation improvements" />
 -    <option name="LAST_COMMIT_MESSAGE" value="made few ux improvements and validation improvements" />
-+    <MESSAGE value="First section filled" />
-+    <MESSAGE value="globle css, start chat button connected" />
-+    <MESSAGE value="tiles and css updated" />
-+    <option name="LAST_COMMIT_MESSAGE" value="tiles and css updated" />
++    <MESSAGE value="profile creation page is done. added improvements in css stylings, has to clarify minor things bout js, did improve the login page's stylings too focused on small details of both and js validations" />
++    <option name="LAST_COMMIT_MESSAGE" value="profile creation page is done. added improvements in css stylings, has to clarify minor things bout js, did improve the login page's stylings too focused on small details of both and js validations" />
    </component>
  </project>
 \ No newline at end of file

@@ -50,6 +50,49 @@ ul {
     color: #9A60E9;
 }
 
+/* Profile Navigation Styles */
+.create-profile-btn {
+    background-color: #9A60E9;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.create-profile-btn:hover {
+    background-color: #8450d7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(154, 96, 233, 0.3);
+}
+
+.profile-preview {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background-color: #f5f0ff;
+}
+
+.profile-preview:hover {
+    background-color: #e8e0f7;
+    transform: translateY(-2px);
+}
+
+.nav-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #9A60E9;
+}
+
+.nav-username {
+    font-weight: 500;
+    color: #333;
+}
+
 /* Title Section */
 .title-section {
     margin: 4rem 10%;
@@ -264,23 +307,46 @@ ul {
 }
 
 .testimonial-image {
+    flex: 0 0 auto;
     margin-right: 2rem;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-img {
+    width: 90px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 3px solid #9A60E9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.testimonial-slide:hover .avatar-img {
+    transform: scale(1.05);
+    border-color: #FF6B4A;
+    box-shadow: 0 6px 12px rgba(154, 96, 233, 0.3), 0 0 0 4px rgba(154, 96, 233, 0.1);
 }
 
 .testimonial-content {
     flex: 1;
+    text-align: left;
 }
 
 .testimonial-content p {
     font-size: 1.25rem;
     font-style: italic;
-    color: #444;
+    color: #333;
     margin-bottom: 1rem;
     line-height: 1.6;
+    font-weight: 500;
 }
 
 .testimonial-content .author {
-    font-weight: 600;
+    font-weight: 700;
     color: #9A60E9;
 }
 
@@ -396,12 +462,13 @@ footer {
     }
 
     .testimonial-slide {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
     }
 
     .testimonial-image {
-        margin-right: 0;
-        margin-bottom: 1rem;
+        margin-right: 1.5rem;
+        margin-bottom: 0;
     }
 }
