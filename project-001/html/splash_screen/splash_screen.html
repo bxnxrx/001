@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayya Says - Akka Knows</title>
+    <link rel="stylesheet" href="../../css/splash_screen/style.css">
+</head>
+<body>
+<div class="splash-container">
+    <video id="splash-video" autoplay muted>
+        <source src="../../assests/Untitled video - Made with Clipchamp (7).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<script>
+    document.getElementById('splash-video').addEventListener('ended', function() {
+        // Redirect to home page after video ends
+        window.location.href = '../home/home.html';
+    });
+</script>
+</body>
+</html>
