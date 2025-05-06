@@ -1,0 +1,157 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"eccd8853-8ee1-400d-9265-51a5cea20f04\" name=\"Changes\" comment=\"create the Google-sign-up page - 2025-04-30\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/project-001/html/about_us/about_us.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/project-001/html/about_us/about_us.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;bxnxrx&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/bxnxrx/001\",\r\n    \"accountId\": \"30a568cf-e508-45bc-bbfb-b485d36e7752\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2wJTuAoTb4uav3FaNXbVpBV2hSE\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;JavaScript Debug.Error_Page.html.executor&quot;: &quot;Run&quot;,\r\n    &quot;JavaScript Debug.chat_page.html.executor&quot;: &quot;Run&quot;,\r\n    &quot;JavaScript Debug.login_page.html.executor&quot;: &quot;Run&quot;,\r\n    &quot;JavaScript Debug.splash_screen.html.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;D:/Project 001/project-001/assests/Google_Login_Page&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\Project 001\\project-001\\assests\\Google_Login_Page\" />\r\n      <recent name=\"D:\\Project 001\\project-001\\css\" />\r\n      <recent name=\"C:\\Users\\Sanjula\\WebstormProjects\\005\\project-001\\css\\login_page\" />\r\n      <recent name=\"C:\\Users\\Sanjula\\WebstormProjects\\005\\project-001\\assests\\login_page\" />\r\n      <recent name=\"C:\\Users\\Binara\\WebstormProjects\\001\\project-001\\assests\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Sanjula\\WebstormProjects\\005\\project-001\\assests\\login_page\" />\r\n      <recent name=\"C:\\Users\\Binara\\WebstormProjects\\001\\project-001\\assests\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"JavaScript Debug.login_page.html\">\r\n    <configuration name=\"Error_Page.html\" type=\"JavascriptDebugType\" temporary=\"true\" nameIsGenerated=\"true\" uri=\"http://localhost:63342/005/project-001/html/Error_Page/Error_Page.html\" useBuiltInWebServerPort=\"true\">\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"chat_page.html\" type=\"JavascriptDebugType\" temporary=\"true\" nameIsGenerated=\"true\" uri=\"http://localhost:63342/005/project-001/html/chat_page/chat_page.html\" useBuiltInWebServerPort=\"true\">\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"login_page.html\" type=\"JavascriptDebugType\" temporary=\"true\" nameIsGenerated=\"true\" uri=\"http://localhost:63342/005/project-001/html/login_page/login_page.html\" useBuiltInWebServerPort=\"true\">\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"splash_screen.html\" type=\"JavascriptDebugType\" temporary=\"true\" nameIsGenerated=\"true\" uri=\"http://localhost:63342/005/project-001/html/splash_screen/splash_screen.html\" useBuiltInWebServerPort=\"true\">\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JavaScript Debug.login_page.html\" />\r\n        <item itemvalue=\"JavaScript Debug.splash_screen.html\" />\r\n        <item itemvalue=\"JavaScript Debug.chat_page.html\" />\r\n        <item itemvalue=\"JavaScript Debug.Error_Page.html\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"eccd8853-8ee1-400d-9265-51a5cea20f04\" name=\"Changes\" comment=\"\" />\r\n      <created>1745758896789</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1745758896789</updated>\r\n      <workItem from=\"1745758897876\" duration=\"700000\" />\r\n      <workItem from=\"1745759676275\" duration=\"3198000\" />\r\n      <workItem from=\"1745850339585\" duration=\"737000\" />\r\n      <workItem from=\"1745852848824\" duration=\"2642000\" />\r\n      <workItem from=\"1745856479261\" duration=\"359000\" />\r\n      <workItem from=\"1745857112023\" duration=\"5801000\" />\r\n      <workItem from=\"1745874281027\" duration=\"61000\" />\r\n      <workItem from=\"1745874362463\" duration=\"419000\" />\r\n      <workItem from=\"1745874799401\" duration=\"269000\" />\r\n      <workItem from=\"1745875099489\" duration=\"1105000\" />\r\n      <workItem from=\"1745876254915\" duration=\"105000\" />\r\n      <workItem from=\"1745876397784\" duration=\"466000\" />\r\n      <workItem from=\"1745989636481\" duration=\"64000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"ff\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745758972689</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745758972689</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745850367485</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745850367485</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745850683290</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745850683290</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745850837347</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745850837347</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745850931820</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745850931820</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745851057590</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745851057590</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"jjjj\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745855040784</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745855040784</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"jjjj\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745855233154</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745855233154</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"jjjj\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745855312197</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745855312197</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"chat ui stage 1 done\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745861861718</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745861861718</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"chat ui stage 2 done\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745863258617</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745863258617</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745875193698</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745875193698</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745875584206</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745875584206</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745875808144</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745875808144</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745876089774</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745876089774</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745876335453</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745876335453</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"made few ux improvements and validation improvements\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745930045960</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745930045960</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"create the Google-sign-up page - 2025-04-30\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745989278950</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745989278950</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"19\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"ff\" />\r\n    <MESSAGE value=\"2\" />\r\n    <MESSAGE value=\"jjjj\" />\r\n    <MESSAGE value=\"chat ui stage 1 done\" />\r\n    <MESSAGE value=\"chat ui stage 2 done\" />\r\n    <MESSAGE value=\"login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done.\" />\r\n    <MESSAGE value=\"made few ux improvements and validation improvements\" />\r\n    <MESSAGE value=\"create the Google-sign-up page - 2025-04-30\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"create the Google-sign-up page - 2025-04-30\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision aa145ab1a94c25c04c30c74bff1a10f8b77bbc45)
++++ b/.idea/workspace.xml	(date 1746012499204)
+@@ -4,9 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="create the Google-sign-up page - 2025-04-30">
++    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="made few ux improvements and validation improvements">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/project-001/html/about_us/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/html/about_us/about_us.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -17,7 +16,6 @@
+     <option name="RECENT_TEMPLATES">
+       <list>
+         <option value="HTML File" />
+-        <option value="CSS File" />
+       </list>
+     </option>
+   </component>
+@@ -30,12 +28,12 @@
+     &quot;assignee&quot;: &quot;bxnxrx&quot;
+   }
+ }</component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/bxnxrx/001",
+-    "accountId": "30a568cf-e508-45bc-bbfb-b485d36e7752"
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/bxnxrx/001.git&quot;,
++    &quot;accountId&quot;: &quot;7b1b9156-e523-4437-b79a-b452f6af8555&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="ProblemsViewState">
+     <option name="selectedTabId" value="CurrentFile" />
+   </component>
+@@ -50,31 +48,29 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+-    &quot;JavaScript Debug.Error_Page.html.executor&quot;: &quot;Run&quot;,
+-    &quot;JavaScript Debug.chat_page.html.executor&quot;: &quot;Run&quot;,
+-    &quot;JavaScript Debug.login_page.html.executor&quot;: &quot;Run&quot;,
+-    &quot;JavaScript Debug.splash_screen.html.executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;D:/Project 001/project-001/assests/Google_Login_Page&quot;,
+-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "DefaultHtmlFileTemplate": "HTML File",
++    "JavaScript Debug.Error_Page.html.executor": "Run",
++    "JavaScript Debug.about_us.html.executor": "Run",
++    "JavaScript Debug.chat_page.html.executor": "Run",
++    "JavaScript Debug.login_page.html.executor": "Run",
++    "JavaScript Debug.splash_screen.html.executor": "Run",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.git.unshallow": "true",
++    "git-widget-placeholder": "main",
++    "junie.onboarding.icon.badge.shown": "true",
++    "last_opened_file_path": "C:/Users/Sanjula/WebstormProjects/005/project-001/css/login_page",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+-      <recent name="D:\Project 001\project-001\assests\Google_Login_Page" />
+-      <recent name="D:\Project 001\project-001\css" />
+       <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\css\login_page" />
+       <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\assests\login_page" />
+       <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
+@@ -84,10 +80,13 @@
+       <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="JavaScript Debug.login_page.html">
++  <component name="RunManager" selected="JavaScript Debug.about_us.html">
+     <configuration name="Error_Page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/Error_Page/Error_Page.html" useBuiltInWebServerPort="true">
+       <method v="2" />
+     </configuration>
++    <configuration name="about_us.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/about_us/about_us.html" useBuiltInWebServerPort="true">
++      <method v="2" />
++    </configuration>
+     <configuration name="chat_page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/chat_page/chat_page.html" useBuiltInWebServerPort="true">
+       <method v="2" />
+     </configuration>
+@@ -99,6 +98,7 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="JavaScript Debug.about_us.html" />
+         <item itemvalue="JavaScript Debug.login_page.html" />
+         <item itemvalue="JavaScript Debug.splash_screen.html" />
+         <item itemvalue="JavaScript Debug.chat_page.html" />
+@@ -133,7 +133,6 @@
+       <workItem from="1745875099489" duration="1105000" />
+       <workItem from="1745876254915" duration="105000" />
+       <workItem from="1745876397784" duration="466000" />
+-      <workItem from="1745989636481" duration="64000" />
+     </task>
+     <task id="LOCAL-00001" summary="ff">
+       <option name="closed" value="true" />
+@@ -271,15 +270,7 @@
+       <option name="project" value="LOCAL" />
+       <updated>1745930045960</updated>
+     </task>
+-    <task id="LOCAL-00018" summary="create the Google-sign-up page - 2025-04-30">
+-      <option name="closed" value="true" />
+-      <created>1745989278950</created>
+-      <option name="number" value="00018" />
+-      <option name="presentableId" value="LOCAL-00018" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1745989278950</updated>
+-    </task>
+-    <option name="localTasksCounter" value="19" />
++    <option name="localTasksCounter" value="18" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -304,7 +295,6 @@
+     <MESSAGE value="chat ui stage 2 done" />
+     <MESSAGE value="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done." />
+     <MESSAGE value="made few ux improvements and validation improvements" />
+-    <MESSAGE value="create the Google-sign-up page - 2025-04-30" />
+-    <option name="LAST_COMMIT_MESSAGE" value="create the Google-sign-up page - 2025-04-30" />
++    <option name="LAST_COMMIT_MESSAGE" value="made few ux improvements and validation improvements" />
+   </component>
+ </project>
+\ No newline at end of file
