@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="made few ux improvements and validation improvements">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_29_2025_3_29_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_29_2025_3_29_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_29_2025_7_19_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_29_2025_7_19_PM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="nothing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-001/css/globle/globle.css" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/css/globle/globle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-001/css/home/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/css/home/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +133,7 @@
       <workItem from="1745876397784" duration="466000" />
       <workItem from="1745946796247" duration="306000" />
       <workItem from="1746465561530" duration="2095000" />
-      <workItem from="1746545965967" duration="680000" />
+      <workItem from="1746545965967" duration="3672000" />
     </task>
     <task id="LOCAL-00001" summary="ff">
       <option name="closed" value="true" />
@@ -277,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745930045960</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="nothing">
+      <option name="closed" value="true" />
+      <created>1746549798441</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1746549798441</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +304,7 @@
     <MESSAGE value="chat ui stage 2 done" />
     <MESSAGE value="login page has done. pushing all files including javascript and images. changed the design a bit. has to clarify few things and further finalizations should be done." />
     <MESSAGE value="made few ux improvements and validation improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="made few ux improvements and validation improvements" />
+    <MESSAGE value="nothing" />
+    <option name="LAST_COMMIT_MESSAGE" value="nothing" />
   </component>
 </project>
