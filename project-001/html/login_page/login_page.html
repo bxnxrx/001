@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/login_page/login_page.css">
+    <script type="module" src="../../scripts/firebase/firebaseLogin.js"></script>
+
 
 </head>
 <body>
@@ -24,6 +26,7 @@
 
         <!-- Authentication Form -->
         <form class="login-form" method="post" action="#" id="loginForm" novalidate>
+            <div id="signInMessage" style="display:none; color:red; margin-bottom:10px; text-align: center"></div>
             <!-- User Email Field -->
             <div class="form-group">
                 <label for="email">Email</label>
