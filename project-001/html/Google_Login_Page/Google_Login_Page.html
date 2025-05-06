@@ -6,6 +6,7 @@
     <title>User Info Form</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/project-001/css/Google_Login_Page/style.css">
+    <script type="module" src="../../scripts/firebase/FirebaseGoogle.js"></script>
 </head>
 <body>
 <div class="shadow-box">
@@ -14,14 +15,15 @@
     </div>
     <form class="form-box">
         <h2>Tell us about you</h2>
-        <input type="text" placeholder="Full name" id="fullname" required>
-        <input type="text" placeholder="Username" id="username" required>
-        <input type="date" placeholder="Birthday" id="Brithday" required>
+        <div id="signUpMessage" style="display:none; color:red; margin-bottom:10px; text-align: center"></div>
+        <input type="text" placeholder="Full name" id="fullName" required>
+        <input type="text" placeholder="Username" id="usernameGoogle" required>
+        <input type="date" placeholder="Birthday" id="birthdayGoogle" required>
         <div class="checkbox-wrapper">
-            <input type="checkbox" id="terms" required>
-            <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+            <input type="checkbox" id="termsGoogle" required>
+            <label for="termsGoogle">I agree to the <a href="../Terms_Page/Terms_Page.html">Terms and Conditions</a></label>
         </div>
-        <button type="submit">Continue</button>
+        <button type="submit" id="GoogleSignUP">Continue</button>
     </form>
 </div>
 </body>
