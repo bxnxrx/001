@@ -30,12 +30,16 @@
         <img src="../../assests/logo.png" alt="Ayya and Akka characters" class="title-image">
     </div>
 </section>
-
 <section class="faq-section">
     <div class="faq-container">
         <div class="faq-placeholder">
             <svg width="300" height="300" viewBox="0 0 300 300">
-                <rect width="300" height="300" rx="20" fill="#FFD7D7" />
+                <defs>
+                    <clipPath id="rounded-image">
+                        <rect width="300" height="300" rx="20" ry="20" />
+                    </clipPath>
+                </defs>
+                <image href="../../assests/thumbsup_home.png" width="300" height="300" clip-path="url(#rounded-image)" />
             </svg>
         </div>
         <div class="faq-content">
@@ -88,6 +92,7 @@
         </div>
     </div>
 </section>
+
 
 <section class="features-section">
     <div class="tile-container">
