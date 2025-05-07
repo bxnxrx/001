@@ -308,6 +308,9 @@ input:checked + .slider:before {
 
 
 
+html, body {
+    overflow: hidden;
+}
 
 
 
