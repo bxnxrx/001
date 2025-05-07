@@ -534,3 +534,17 @@ function validateWithLoading(inputElement, validationFn) {
         validationFn();
     }, 2000); // 2 second delay
 }
+document.addEventListener("DOMContentLoaded", () => {
+    const avatarImages = document.querySelectorAll(".avatar");
+
+    avatarImages.forEach((img) => {
+        img.addEventListener("click", () => {
+            avatarImages.forEach((avatar) => avatar.classList.remove("avatar-selected"));
+            img.classList.add("avatar-selected");
+        });
+    });
+});
+
+function goForward() {
+    window.location.href = "../../html/Profile_CardPage/Profile_CardPage.html";
+}
