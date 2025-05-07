@@ -3,21 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayya Says - Akka Knows</title>
+    <title>Welcome to Our Website</title>
     <link rel="stylesheet" href="../../css/splash_screen/style.css">
 </head>
 <body>
-<div class="splash-container">
-    <video id="splash-video" autoplay muted>
-        <source src="../../assests/Untitled video - Made with Clipchamp (7).mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+<div class="splash-container" id="splash">
+    <div class="geo-shapes">
+        <div class="shape square"></div>
+        <div class="shape triangle"></div>
+        <div class="shape rectangle"></div>
+        <div class="shape circle-shape"></div>
+    </div>
+
+    <div class="decorative-circle circle1"></div>
+    <div class="decorative-circle circle2"></div>
+    <div class="decorative-circle circle3"></div>
+
+    <div class="splash-content">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="../../assests/thumbsup_home.png" alt="Logo" class="logo-image" />
+            </div>
+        </div>
+        <h1>ආයුබෝවන්! Welcome to your AI bestie 🇱🇰</h1>
+        <p>Ayya Says - Akka Knows <br> Chat smart. Chat local. Chat real. </p>
+
+        <div class="loader">
+            <span>LOADING</span>
+        </div>
+    </div>
 </div>
 
 <script>
-    document.getElementById('splash-video').addEventListener('ended', function() {
-        // Redirect to home page after video ends
-        window.location.href = '../home/home.html';
+    document.addEventListener('DOMContentLoaded', function() {
+        // Create floating particles dynamically
+        const container = document.querySelector('.splash-container');
+        for (let i = 0; i < 20; i++) {
+            createParticle();
+        }
+
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+
+            // Random size between 10 and 40
+            const size = Math.random() * 30 + 10;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+
+            // Random position
+            const posX = Math.random() * window.innerWidth;
+            const startY = Math.random() * window.innerHeight + window.innerHeight;
+            particle.style.left = `${posX}px`;
+            particle.style.bottom = `${-size}px`;
+
+            // Random animation duration
+            const duration = Math.random() * 5 + 8;
+            particle.style.animation = `floatParticle ${duration}s linear infinite`;
+
+            // Random delay
+            const delay = Math.random() * 5;
+            particle.style.animationDelay = `${delay}s`;
+
+            container.appendChild(particle);
+        }
+
+        // After exactly 3 seconds, fade out and redirect
+        setTimeout(function() {
+            const splashElement = document.getElementById('splash');
+            splashElement.style.animation = 'fadeOut 1s forwards';
+
+            // After fade out completes, redirect to home page
+            setTimeout(function() {
+                window.location.href = '../../html/home/home.html'; // Change this to your home page URL
+            }, 1000);
+        }, 3000);
     });
 </script>
 </body>
