@@ -13,6 +13,7 @@ const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
+
 app.get('/', (req, res) => {
     res.send('✅ ChatGPT backend is running!');
 });
