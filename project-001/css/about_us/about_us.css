@@ -25,6 +25,7 @@ body {
 }
 
 a {
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: inherit;
 }
@@ -43,6 +44,7 @@ button {
 
 /* Hero Section */
 .hero {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +52,7 @@ button {
 }
 
 .hero-content {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,6 +85,7 @@ button {
 }
 
 .hero-text {
+    font-family: 'Poppins', sans-serif;
     max-width: 512px;
     margin-top: 48px;
     color: #4b5563;
@@ -114,6 +118,7 @@ button {
 
 /* Our Story Section - Improved Layout */
 .story-section {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
