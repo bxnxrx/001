@@ -311,18 +311,6 @@ input:checked + .slider:before {
 html, body {
     overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /* Toggle Switch Styles - Enhanced for Ayya/Akka Theme */
 
 .toggle-switch {
@@ -430,4 +418,7 @@ input:checked + .slider::before {
 
 .user-message, .bot-message {
     animation: messageAppear 0.3s ease;
+}
+.chat-area {
+    overflow: hidden;
 }
