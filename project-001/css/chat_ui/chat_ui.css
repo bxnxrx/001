@@ -419,3 +419,6 @@ input:checked + .slider::before {
 .user-message, .bot-message {
     animation: messageAppear 0.3s ease;
 }
+.chat-area {
+    overflow: hidden;
+}
