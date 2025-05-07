@@ -239,3 +239,192 @@ input:checked + .slider:before {
     font-style: italic;
     opacity: 0.7;
 }
+.bot-message,
+.user-message {
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+#chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* adds spacing */
+    overflow-y: auto;
+    padding: 10px;
+}
+.chat-area {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .avatar img {
+        width: 50px;
+        margin: 0;
+    }
+
+    .chat-header,
+    .chat-input {
+        padding: 10px;
+    }
+
+    .chat-input {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .chat-input input,
+    .send-btn {
+        width: 100%;
+    }
+}
+.chat-input {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    z-index: 1;
+}
+.user-message.akka {
+    background-color: #fde0db !important;
+}
+/* Toggle Switch Styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Toggle Switch Styles - Enhanced for Ayya/Akka Theme */
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Background capsule */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    transition: .4s;
+    border-radius: 34px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Avatar thumb - this is what slides */
+.avatar-thumb {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #6488a7; /* Ayya default color */
+    top: 2px;
+    left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-thumb img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Akka mode: slide to right */
+input:checked + .slider .avatar-thumb {
+    transform: translateX(26px);
+    background-color: #f5826e; /* Akka color */
+}
+
+/* For better visibility on white background */
+.slider::before, .slider::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Optional enhancement: Subtle visual cue of which side is active */
+.slider::before {
+    background: linear-gradient(90deg, rgba(100, 136, 167, 0.1) 0%, rgba(255, 255, 255, 0) 50%);
+}
+
+input:checked + .slider::before {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, rgba(245, 130, 110, 0.1) 100%);
+}
+
+/* Smooth transitions for color changes */
+.chat-header {
+    transition: background-color 0.3s ease;
+}
+
+.bot-message {
+    transition: background-color 0.3s ease;
+}
+
+.new-chat-btn {
+    transition: background-color 0.3s ease;
+}
+
+/* Message animations */
+@keyframes messageAppear {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.user-message, .bot-message {
+    animation: messageAppear 0.3s ease;
+}
