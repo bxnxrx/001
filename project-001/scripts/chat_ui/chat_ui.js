@@ -23,7 +23,7 @@ toggle.addEventListener('change', () => {
     const modeColor = isAkka ? '#f5826e' : '#6488a7';
     const modeName = isAkka ? 'Akka mode' : 'Ayya mode';
     const modeDescText = isAkka ? 'කියන්න හලෝ 😚' : 'කියන්න මචන් 😎';
-    const botWelcome = isAkka ? 'Nangi, කියන්න what do you wanna know ?' : 'Machan, what\'s on your mind today?';
+    const botWelcome = isAkka ? 'හායි! How can I help you today, darling?' : 'Machan, what\'s on your mind today?';
     const modeAvatarSrc = isAkka ? '../../assests/akka_chat_ui_upper.png' : '../../assests/ayya_chat_ui_upper.png';
     const avatarImgSrc = isAkka ? '../../assests/akka_giantavatar_chat_ui.png' : '../../assests/ayya_giantavatar_chat_ui.png';
 
