@@ -42,6 +42,77 @@ button {
 
 /* Layout */
 
+/* Header and Navigation (same as home header) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .logo img.navbar-logo {
+    width: 130px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links li a {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #9A60E9;
+}
+
+.create-profile-btn {
+    background-color: #9A60E9;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.create-profile-btn:hover {
+    background-color: #8450d7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(154, 96, 233, 0.3);
+}
+
+.profile-preview {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background-color: #f5f0ff;
+}
+
+.profile-preview:hover {
+    background-color: #e8e0f7;
+    transform: translateY(-2px);
+}
+
+/* Mobile responsiveness for header */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 /* Hero Section */
 .hero {
     font-family: 'Poppins', sans-serif;
@@ -732,17 +803,6 @@ svg {
 .story-col {
     width: 100%;
     max-width: 450px;
-}
-
-/* Illustration positioning */
-.story-illustration-left,
-.story-illustration-right {
-    display: block;
-    margin: 2rem auto;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
 }
 
 
