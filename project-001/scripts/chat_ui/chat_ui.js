@@ -82,7 +82,7 @@ sendBtn.addEventListener('click', async () => {
     chatMessages.scrollTop = chatMessages.scrollHeight;
 
     try {
-        const response = await fetch('http://localhost:5000/chat', {
+        const response = await fetch('https://volcano-lumpy-cardinal.glitch.me/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message, mode })
