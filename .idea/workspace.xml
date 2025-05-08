@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="chat send msg and get msges functionality upadated" />
+    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="splash screen done">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-001/css/contact us/contact_us.css" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/css/contact us/contact_us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-001/html/contact us/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/html/contact us/contact_us.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +33,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/bxnxrx/001.git&quot;,
-    &quot;accountId&quot;: &quot;7b1b9156-e523-4437-b79a-b452f6af8555&quot;
+    &quot;accountId&quot;: &quot;81ada444-b688-4aa5-b406-04e992fadf7e&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -46,29 +50,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.Error_Page.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.chat_page.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.login_page.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.splash_screen.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sanjula/WebstormProjects/005/project-001/css/login_page&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Error_Page.html.executor": "Run",
+    "JavaScript Debug.chat_page.html.executor": "Run",
+    "JavaScript Debug.login_page.html.executor": "Run",
+    "JavaScript Debug.splash_screen.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "D:/001/project-001/assests",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\001\project-001\assests" />
       <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\css\login_page" />
       <recent name="C:\Users\Sanjula\WebstormProjects\005\project-001\assests\login_page" />
       <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
@@ -78,7 +83,7 @@
       <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.splash_screen.html">
+  <component name="RunManager" selected="JavaScript Debug.login_page.html">
     <configuration name="Error_Page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/Error_Page/Error_Page.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -93,8 +98,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.splash_screen.html" />
         <item itemvalue="JavaScript Debug.login_page.html" />
+        <item itemvalue="JavaScript Debug.splash_screen.html" />
         <item itemvalue="JavaScript Debug.chat_page.html" />
         <item itemvalue="JavaScript Debug.Error_Page.html" />
       </list>
@@ -144,7 +149,11 @@
       <workItem from="1746296802700" duration="81000" />
       <workItem from="1746459703970" duration="717000" />
       <workItem from="1746460437530" duration="2096000" />
-      <workItem from="1746558556333" duration="102000" />
+      <workItem from="1746606404600" duration="5256000" />
+      <workItem from="1746611986208" duration="2000" />
+      <workItem from="1746624383207" duration="808000" />
+      <workItem from="1746629550441" duration="137000" />
+      <workItem from="1746639531729" duration="2079000" />
     </task>
     <task id="LOCAL-00001" summary="ff">
       <option name="closed" value="true" />
@@ -306,7 +315,47 @@
       <option name="project" value="LOCAL" />
       <updated>1746177430811</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="contact us page 80% done">
+      <option name="closed" value="true" />
+      <created>1746559993964</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1746559993964</updated>
+    </task>
+    <task id="LOCAL-00022" summary="contact us page 80% done">
+      <option name="closed" value="true" />
+      <created>1746560025625</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1746560025625</updated>
+    </task>
+    <task id="LOCAL-00023" summary="contact us">
+      <option name="closed" value="true" />
+      <created>1746610068792</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1746610068792</updated>
+    </task>
+    <task id="LOCAL-00024" summary="contact us">
+      <option name="closed" value="true" />
+      <created>1746629582369</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1746629582369</updated>
+    </task>
+    <task id="LOCAL-00025" summary="splash screen done">
+      <option name="closed" value="true" />
+      <created>1746719109160</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1746719109160</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,6 +385,9 @@
     <MESSAGE value="made few ux improvements and validation improvements" />
     <MESSAGE value="chat ui image bug fixed" />
     <MESSAGE value="chat send msg and get msges functionality upadated" />
-    <option name="LAST_COMMIT_MESSAGE" value="chat send msg and get msges functionality upadated" />
+    <MESSAGE value="contact us page 80% done" />
+    <MESSAGE value="contact us" />
+    <MESSAGE value="splash screen done" />
+    <option name="LAST_COMMIT_MESSAGE" value="splash screen done" />
   </component>
 </project>

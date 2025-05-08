@@ -1,113 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="../../css/contact%20us/contact_us.css" />
-    <link rel="stylesheet" href="../../css/globle/globle.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Connect Creatively</title>
+    <link rel="stylesheet" href="../../css/contact%20us/contact_us.css">
 </head>
 <body>
 <nav class="navbar">
     <div class="logo">
-        <img src="../../assests/upper_logo.png.png" alt="Ayya Says Akka Knows logo" id="logo-img">
+        <img src="../../assests/upper_logo.png.png" alt="Ayya Says Akka Knows logo" id="logo-img" class="navbar-logo">
     </div>
     <ul class="nav-links">
-        <li><a href="#">Products</a></li>
-        <li><a href="../about_us/about_us.html">About</a></li>
-        <li><a href="../login_page/login_page.html">Log In</a></li>
-        <li><a href="../signup_page/signup_page.html">Sign Up</a></li>
+        <!-- Added Home button before Log In -->
+        <li class="home-link"><a href="../home/home.html">Home</a></li>
+        <li class="guest-links"><a href="../login_page/login_page.html">Log In</a></li>
+        <li class="guest-links"><a href="../signup_page/signup_page.html">Sign Up</a></li>
+        <li class="user-no-profile" style="display:none;">
+            <a href="../profile_creation/profile_creation.html" class="create-profile-btn">Create Profile</a>
+        </li>
+        <li class="user-with-profile" style="display:none;">
+            <a href="../Profile_CardPage/Profile_CardPage.html" class="profile-preview">
+                <img src="" alt="Avatar" class="nav-avatar" />
+                <span class="nav-username">User</span>
+            </a>
+        </li>
     </ul>
 </nav>
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <div class="hero-image">
-                <img src="../../assests/contactus.png" alt="Customer support team">
-            </div>
-            <div class="hero-text">
-                <h1>Get in Touch</h1>
-                <p>We'd love to hear from you. Contact us with any questions, feedback, or inquiries.</p>
-            </div>
-        </div>
+<header>
+    <div class="header-content">
+        <img src="../../assests/contactus.png">
+        <h1>Let's Start a Conversation</h1>
+        <p>We're just a message away. Whether you have a question, want to collaborate, or just say hello - we'd love to hear from you!</p>
     </div>
-</section>
+</header>
 
-<section class="contact-section">
-    <div class="container">
-        <div class="contact-grid">
-            <div class="contact-info">
-                <div class="contact-method">
-                    <h3>Our Office</h3>
-                    <p>123 Business Avenue</p>
-                    <p>Suite 456</p>
-                    <p>City, State 78901</p>
-                </div>
-                <div class="contact-method">
+<div class="container">
+    <div class="contact-wrapper">
+        <div class="contact-info animate">
+            <h2>Get in Touch</h2>
+
+            <div class="info-item">
+                <div class="icon">📞</div>
+                <div class="info-content">
                     <h3>Phone</h3>
-                    <p>Main: (555) 123-4567</p>
-                    <p>Support: (555) 765-4321</p>
-                </div>
-                <div class="contact-method">
-                    <h3>Email</h3>
-                    <p>info@yourcompany.com</p>
-                    <p>support@yourcompany.com</p>
-                </div>
-                <div class="contact-method">
-                    <h3>Business Hours</h3>
-                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-                    <p>Saturday: 10:00 AM - 2:00 PM</p>
-                    <p>Sunday: Closed</p>
-                </div>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                    </a>
-                    <a href="#" aria-label="Twitter">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-                    </a>
-                    <a href="#" aria-label="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                    </a>
-                    <a href="#" aria-label="Instagram">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                    </a>
+                    <p>(123) 456-7890</p>
                 </div>
             </div>
-            <div class="contact-form">
-                <h2>Send Us a Message</h2>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone (Optional)</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject">
-                            <option value="general">General Inquiry</option>
-                            <option value="support">Technical Support</option>
-                            <option value="sales">Sales Questions</option>
-                            <option value="billing">Billing Issues</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Submit Message</button>
-                </form>
+
+            <div class="info-item">
+                <div class="icon">✉️</div>
+                <div class="info-content">
+                    <h3>Email</h3>
+                    <p>hello@creativeconnect.com</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon">📍</div>
+                <div class="info-content">
+                    <h3>Location</h3>
+                    <p>123 Creative Avenue, Innovation City, CO 12345</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon">⏰</div>
+                <div class="info-content">
+                    <h3>Office Hours</h3>
+                    <p>Monday to Friday: 9am to 6pm</p>
+                </div>
             </div>
         </div>
+
+        <div class="contact-form animate">
+            <h2>Send Us a Message</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email address">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" class="form-control" placeholder="What's this about?">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control" placeholder="Tell us what's on your mind..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </div>
     </div>
-</section>
+    <div class="map-section animate">
+        <h2>Find Us</h2>
+        <div class="map-container">
+            <img src="../../assests/companyLogo.png" alt="Map location" style="width: 500px; height: 400px; object-fit: cover;">
+        </div>
+    </div>
+    <div class="social-links animate">
+        <a href="https://facebook.com" class="social-link" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="24">
+        </a>
+        <a href="https://linkedin.com" class="social-link" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="24">
+        </a>
+        <a href="https://twitter.com" class="social-link" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter" width="24">
+        </a>
+        <a href="https://instagram.com" class="social-link" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" width="24">
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Ceynode(pvt)LTD. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // Add animation classes when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const animatedElements = document.querySelectorAll('.animate');
+
+        animatedElements.forEach(element => {
+            element.style.opacity = "0";
+
+            setTimeout(() => {
+                element.style.animation = "fadeIn 0.8s ease forwards";
+            }, 300);
+        });
+
+        // Form validation
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            alert('Thank you for your message! We will get back to you soon.');
+            form.reset();
+        });
+    });
+</script>
 </body>
 </html>
