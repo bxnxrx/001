@@ -11,11 +11,226 @@
     >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /* General styles */
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 290px;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #e0e0e0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .logo-section {
+            align-content: center;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-top: 25%;
+            max-width: 80%;
+            height: auto;
+        }
+
+        .new-chat-btn {
+            background-color: #6488a7;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 10px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .avatar {
+            text-align: center;
+
+          /* Hide on desktop as requested */
+        }
+
+        .profile-btn {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            padding : 15px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            margin-top: auto;
+            margin-bottom: 34%;
+
+        }
+
+        .profile-btn img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .profile-btn span {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .profile-btn a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Chat area styles */
+        .chat-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background-color: #f5f7f9;
+            margin-bottom: 35px;
+        }
+
+        .chat-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #6488a7;
+            color: white;
+        }
+
+        .mode-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .mode-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .mode-info h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .mode-info p {
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .toggle-switch {
+            display: flex;
+            align-items: center;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: white;
+            border-radius: 34px;
+            transition: .4s;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5px;
+        }
+
+        .avatar-thumb {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .avatar-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .bot-message {
+            background-color: #f0f2f5;
+            padding: 12px 15px;
+            border-radius: 15px;
+            max-width: 70%;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .chat-input {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 25px;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .send-btn {
+            background-color: transparent;
+            border: none;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: #6488a7;
+        }
+
         /* -----------------------------------------
            Desktop: hide that giant sidebar avatar
         ----------------------------------------- */
         @media (min-width: 769px) {
             .sidebar .avatar { display: none; }
+            .mobile-header { display: none; }
         }
 
         /* -----------------------------
@@ -23,10 +238,6 @@
         ----------------------------- */
         @media (max-width: 768px) {
             /* body + app container */
-            body {
-                margin: 0;
-                overflow: hidden;
-            }
             .mobile-header {
                 display: flex;
                 justify-content: space-between;
@@ -50,6 +261,7 @@
             /* Slide-in sidebar: scrollable now */
             .sidebar {
                 display: none;
+                width: 280px;
             }
             .sidebar.active {
                 display: flex;
@@ -57,12 +269,11 @@
                 position: fixed;
                 top: 0; left: 0;
                 height: 100%;
-                width: 280px;
                 background: #fff;
                 box-shadow: 2px 0 10px rgba(0,0,0,0.1);
                 padding-top: 10px;
                 z-index: 1000;
-                overflow-y: auto;               /* ← allow scrolling */
+                overflow-y: auto;
                 -webkit-overflow-scrolling: touch;
             }
             .sidebar-close {
@@ -97,8 +308,8 @@
                 height: 100%;
                 overflow-y: auto;
                 padding: 15px;
-                padding-bottom: 80px;           /* ← leave room for the fixed input */
-                background-color: #f8f8f8;
+                padding-bottom: 80px;
+                background-color: #f5f7f9;
             }
             .chat-input input {
                 flex: 1;
@@ -152,11 +363,14 @@
 <div class="container">
     <!-- SIDEBAR -->
     <aside class="sidebar" id="sidebar">
-        <button class="sidebar-close" id="sidebar-close">×</button>
+
         <div class="logo-section">
             <img src="../../assests/upper_logo.png.png" alt="Logo" class="logo">
         </div>
-        <button id="new-chat-btn" class="new-chat-btn">New Chat +</button>
+        <div class="sidebar-content">
+
+            <button id="new-chat-btn" class="new-chat-btn">New Chat +</button>
+        </div>
         <div class="avatar">
             <img src="avatar.png" alt="Avatar" id="avatar-img">
         </div>
@@ -170,7 +384,7 @@
     <main class="chat-area">
         <div class="chat-header" id="chat-header">
             <div class="mode-info">
-                <img src="avatar.png" alt="Mode Avatar" class="mode-avatar" id="mode-avatar">
+                <img src="../../assests/ayya_chat_ui_upper.png" alt="Mode Avatar" class="mode-avatar" id="mode-avatar">
                 <div>
                     <h2 id="mode-title">Ayya mode</h2>
                     <p id="mode-desc">කියන්න මචන්</p>
@@ -180,14 +394,14 @@
                 <label class="switch">
                     <input type="checkbox" id="toggle-mode">
                     <span class="slider">
-              <div class="avatar-thumb">
-                <img
-                        src="../../assests/ayya_chat_ui_upper.png"
-                        id="toggle-icon"
-                        alt="Toggle Avatar"
-                >
-              </div>
-            </span>
+                        <div class="avatar-thumb">
+                            <img
+                                    src="../../assests/ayya_chat_ui_upper.png"
+                                    id="toggle-icon"
+                                    alt="Toggle Avatar"
+                            >
+                        </div>
+                    </span>
                 </label>
             </div>
         </div>
@@ -202,7 +416,7 @@
             <input
                     type="text"
                     id="user-input"
-                    placeholder="Type a message…"
+                    placeholder="Type a message..."
             >
             <button class="send-btn" id="send-btn">➔</button>
         </div>
@@ -213,26 +427,6 @@
 <div class="overlay" id="overlay"></div>
 
 <script src="../../scripts/chat_ui/chat_ui.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const sidebar = document.getElementById('sidebar');
-        const openBtn = document.getElementById('mobile-menu-button');
-        const closeBtn = document.getElementById('sidebar-close');
-        const overlay = document.getElementById('overlay');
 
-        openBtn.addEventListener('click', () => {
-            sidebar.classList.add('active');
-            overlay.classList.add('active');
-        });
-        closeBtn.addEventListener('click', () => {
-            sidebar.classList.remove('active');
-            overlay.classList.remove('active');
-        });
-        overlay.addEventListener('click', () => {
-            sidebar.classList.remove('active');
-            overlay.classList.remove('active');
-        });
-    });
-</script>
 </body>
 </html>

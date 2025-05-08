@@ -113,3 +113,22 @@ sendBtn.addEventListener('click', async () => {
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.getElementById('sidebar');
+    const openBtn = document.getElementById('mobile-menu-button');
+    const closeBtn = document.getElementById('sidebar-close');
+    const overlay = document.getElementById('overlay');
+
+    openBtn.addEventListener('click', () => {
+        sidebar.classList.add('active');
+        overlay.classList.add('active');
+    });
+    closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+    overlay.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+});
