@@ -3,82 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Our Website</title>
-    <link rel="stylesheet" href="../../css/splash_screen/style.css">
+    <title>Ayya Says - Akka Knows</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #f7f9fa;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .splash-container {
+            width: 100%;
+            max-width: 800px;
+            position: relative;
+            padding: 20px;
+        }
+
+        .splash-card {
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .brand-stripe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(to right, #006874, #ff7f50);
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .logo-badge {
+            background: #006874;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 8px 15px rgba(0, 104, 116, 0.15);
+        }
+
+        .welcome-text {
+            font-size: 38px;
+            font-weight: 800;
+            color: #062e33;
+            margin-bottom: 40px;
+        }
+
+        .image-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto 30px;
+        }
+
+        .image-bg {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(255, 127, 80, 0.1) 0%, rgba(0, 104, 116, 0.05) 70%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .circle-1, .circle-2 {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+
+        .circle-1 {
+            width: 80px;
+            height: 80px;
+            background-color: #006874;
+            bottom: 40px;
+            left: 20%;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        .circle-2 {
+            width: 60px;
+            height: 60px;
+            background-color: #ff7f50;
+            top: 60px;
+            right: 25%;
+            animation: float 5s infinite ease-in-out 1s;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .character-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: relative;
+            z-index: 2;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .loading-container {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .loading-bar {
+            height: 6px;
+            width: 100%;
+            background-color: #f0f0f0;
+            border-radius: 3px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .loading-progress {
+            position: absolute;
+            height: 100%;
+            background: linear-gradient(to right, #006874, #ff7f50);
+            border-radius: 3px;
+            animation: loading 2.5s infinite ease-in-out;
+        }
+
+        @keyframes loading {
+            0% { width: 0%; left: 0; }
+            50% { width: 100%; left: 0; }
+            100% { width: 0%; left: 100%; }
+        }
+
+        .loading-text {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .splash-card {
+                padding: 30px 20px;
+            }
+
+            .image-container {
+                width: 220px;
+                height: 220px;
+            }
+
+            .image-bg {
+                width: 180px;
+                height: 180px;
+            }
+
+            .welcome-text {
+                font-size: 30px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="splash-container" id="splash">
-    <div class="geo-shapes">
-        <div class="shape square"></div>
-        <div class="shape triangle"></div>
-        <div class="shape rectangle"></div>
-        <div class="shape circle-shape"></div>
-    </div>
+<div class="splash-container">
+    <div class="splash-card">
+        <div class="brand-stripe"></div>
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
 
-    <div class="decorative-circle circle1"></div>
-    <div class="decorative-circle circle2"></div>
-    <div class="decorative-circle circle3"></div>
 
-    <div class="splash-content">
-        <div class="logo-container">
-            <div class="logo">
-                <img src="../../assests/thumbsup_home.png" alt="Logo" class="logo-image" />
-            </div>
+
+        <div class="image-container">
+            <div class="image-bg"></div>
+            <img src="../../assests/welcome.png" alt="Ayya and Akka" class="character-image">
         </div>
-        <h1>Welcome to your AI bestie 🇱🇰</h1>
-        <p>Ayya Says - Akka Knows <br> Chat smart. Chat local. Chat real. </p>
 
-        <div class="loader">
-            <span>LOADING</span>
+        <h1 class="welcome-text">Welcome to your AI bestie</h1>
+
+        <div class="loading-container">
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-text">Loading</div>
         </div>
     </div>
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Create floating particles dynamically
-        const container = document.querySelector('.splash-container');
-        for (let i = 0; i < 20; i++) {
-            createParticle();
-        }
-
-        function createParticle() {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-
-            // Random size between 10 and 40
-            const size = Math.random() * 30 + 10;
-            particle.style.width = `${size}px`;
-            particle.style.height = `${size}px`;
-
-            // Random position
-            const posX = Math.random() * window.innerWidth;
-            const startY = Math.random() * window.innerHeight + window.innerHeight;
-            particle.style.left = `${posX}px`;
-            particle.style.bottom = `${-size}px`;
-
-            // Random animation duration
-            const duration = Math.random() * 5 + 8;
-            particle.style.animation = `floatParticle ${duration}s linear infinite`;
-
-            // Random delay
-            const delay = Math.random() * 5;
-            particle.style.animationDelay = `${delay}s`;
-
-            container.appendChild(particle);
-        }
-
-        // After exactly 3 seconds, fade out and redirect
-        setTimeout(function() {
-            const splashElement = document.getElementById('splash');
-            splashElement.style.animation = 'fadeOut 1s forwards';
-
-            // After fade out completes, redirect to home page
-            setTimeout(function() {
-                window.location.href = '../../html/home/home.html'; // Change this to your home page URL
-            }, 1000);
-        }, 10000);
-    });
+    // Simulate loading progress
+    setTimeout(() => {
+        window.location.href = "project-001/html/home/home.html"; // replace with your actual page
+    }, 1000); // 3 seconds
 </script>
 </body>
 </html>
