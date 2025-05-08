@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="contact us">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_30_2025_4_52_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_30_2025_4_52_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_30_2025_4_57_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_30_2025_4_57_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-001/css/splash_screen/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/css/splash_screen/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-001/html/splash_screen/splash_screen.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-001/html/splash_screen/splash_screen.html" afterDir="false" />
-    </list>
+    <list default="true" id="eccd8853-8ee1-400d-9265-51a5cea20f04" name="Changes" comment="chat send msg and get msges functionality upadated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +29,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/bxnxrx/001.git&quot;,
-    &quot;accountId&quot;: &quot;81ada444-b688-4aa5-b406-04e992fadf7e&quot;
+    &quot;accountId&quot;: &quot;7b1b9156-e523-4437-b79a-b452f6af8555&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -86,7 +78,7 @@
       <recent name="C:\Users\Binara\WebstormProjects\001\project-001\assests" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.login_page.html">
+  <component name="RunManager" selected="JavaScript Debug.splash_screen.html">
     <configuration name="Error_Page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/005/project-001/html/Error_Page/Error_Page.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -101,8 +93,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.login_page.html" />
         <item itemvalue="JavaScript Debug.splash_screen.html" />
+        <item itemvalue="JavaScript Debug.login_page.html" />
         <item itemvalue="JavaScript Debug.chat_page.html" />
         <item itemvalue="JavaScript Debug.Error_Page.html" />
       </list>
@@ -152,11 +144,7 @@
       <workItem from="1746296802700" duration="81000" />
       <workItem from="1746459703970" duration="717000" />
       <workItem from="1746460437530" duration="2096000" />
-      <workItem from="1746606404600" duration="5256000" />
-      <workItem from="1746611986208" duration="2000" />
-      <workItem from="1746624383207" duration="808000" />
-      <workItem from="1746629550441" duration="137000" />
-      <workItem from="1746639531729" duration="2079000" />
+      <workItem from="1746558556333" duration="102000" />
     </task>
     <task id="LOCAL-00001" summary="ff">
       <option name="closed" value="true" />
@@ -318,39 +306,7 @@
       <option name="project" value="LOCAL" />
       <updated>1746177430811</updated>
     </task>
-    <task id="LOCAL-00021" summary="contact us page 80% done">
-      <option name="closed" value="true" />
-      <created>1746559993964</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1746559993964</updated>
-    </task>
-    <task id="LOCAL-00022" summary="contact us page 80% done">
-      <option name="closed" value="true" />
-      <created>1746560025625</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1746560025625</updated>
-    </task>
-    <task id="LOCAL-00023" summary="contact us">
-      <option name="closed" value="true" />
-      <created>1746610068792</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1746610068792</updated>
-    </task>
-    <task id="LOCAL-00024" summary="contact us">
-      <option name="closed" value="true" />
-      <created>1746629582369</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1746629582369</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,8 +336,6 @@
     <MESSAGE value="made few ux improvements and validation improvements" />
     <MESSAGE value="chat ui image bug fixed" />
     <MESSAGE value="chat send msg and get msges functionality upadated" />
-    <MESSAGE value="contact us page 80% done" />
-    <MESSAGE value="contact us" />
-    <option name="LAST_COMMIT_MESSAGE" value="contact us" />
+    <option name="LAST_COMMIT_MESSAGE" value="chat send msg and get msges functionality upadated" />
   </component>
 </project>

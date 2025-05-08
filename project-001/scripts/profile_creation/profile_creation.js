@@ -517,6 +517,69 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 1000); // 1 second delay
         }
     });
+
+    // Optimize for mobile
+    function setupMobileOptimizations() {
+        // Prevent zoom on input focus for iOS devices
+        const allInputs = document.querySelectorAll('input');
+        allInputs.forEach(input => {
+            // iOS doesn't zoom if font-size >= 16px
+            input.style.fontSize = '16px';
+            
+            // Scroll field into view when focused on mobile
+            input.addEventListener('focus', function() {
+                // Small delay to ensure keyboard is visible
+                setTimeout(() => {
+                    this.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 300);
+            });
+        });
+        
+        // Improve date picker for mobile
+        if (datePickerModal) {
+            // Prevent body scrolling when date picker is open
+            datePickerModal.addEventListener('touchmove', function(e) {
+                e.preventDefault();
+            }, { passive: false });
+            
+            // Add swipe support for changing months (simple implementation)
+            let touchStartX = 0;
+            calendarDaysEl.addEventListener('touchstart', function(e) {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+            
+            calendarDaysEl.addEventListener('touchend', function(e) {
+                const touchEndX = e.changedTouches[0].screenX;
+                const diff = touchStartX - touchEndX;
+                
+                // Swipe threshold
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) {
+                        // Swipe left - next month
+                        const newDate = new Date(currentDate);
+                        newDate.setMonth(newDate.getMonth() + 1);
+                        // Don't allow scrolling to future months
+                        if (newDate <= new Date()) {
+                            currentDate = newDate;
+                            updateCalendar(currentDate);
+                        }
+                    } else {
+                        // Swipe right - previous month
+                        currentDate.setMonth(currentDate.getMonth() - 1);
+                        updateCalendar(currentDate);
+                    }
+                }
+            }, { passive: true });
+        }
+    }
+    
+    // Initialize mobile optimizations
+    setupMobileOptimizations();
+    
+    // Detect viewport changes to adjust layout if needed
+    window.addEventListener('resize', function() {
+        // Update layout if needed when orientation changes
+    });
 });
 
 // Enhanced validation function with loading state
