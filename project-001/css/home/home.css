@@ -283,6 +283,19 @@ ul {
     height: 250px;
     overflow: hidden;
 }
+.profile-preview {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.profile-preview:hover {
+    opacity: 0.8;
+}
+
 
 .testimonial-slide {
     position: absolute;

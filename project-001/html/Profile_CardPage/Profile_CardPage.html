@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Profile Card Page</title>
     <link rel="stylesheet" href="/project-001/css/Profile_CardPage/style.css"/>
+    <script type="module" src="/project-001/scripts/firebase/FirebaseProfileCard.js"></script>
+
 </head>
 <body>
 <script src="/project-001/scripts/Profile_CardPage/Profile_CardPage.js"></script>
@@ -15,14 +17,18 @@
     </div>
 
     <div class="profile">
-        <img src="https://cdn.pixabay.com/photo/2021/03/23/12/13/avatar-6114975_1280.png" alt="Profile Picture"/>
-        <div class="name">Supiri Sadeepa</div>
-        <div class="username">@notySadeepal23</div>
-        <div class="age-gender">20 Years old Boy <span class="eye-icon">👁️</span></div>
+        <img id="profileImage" src="../../assests/avatar.png" alt="Profile Picture" style="margin-bottom: 20px;" />
+
+
+        <div class="name" id="FullName">Loading full name…</div>
+        <div class="username" id="username">@loading</div>
+        <div class="age-gender" id="birthday">🎂 loading <span class="eye-icon">👁️</span></div>
+
     </div>
 
+
     <div style="text-align: center;">
-        <button class="update-button">Update Your Profile</button>
+        <button class="update-button" onclick="goForward()">Update Your Profile</button>
     </div>
 </div>
 </body>

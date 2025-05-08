@@ -18,13 +18,14 @@ body {
     overflow-x: hidden;
 }
 
-img {
+.hero-image img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
 a {
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: inherit;
 }
@@ -40,54 +41,10 @@ button {
 }
 
 /* Layout */
-.container {
-    max-width: 100%;
-    margin: 0 auto;
 
-}
-
-/* Header */
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 24px;
-    align-items: center;
-    height: 80px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.logo img {
-    height: 40px;
-}
-
-.logo svg {
-    height: 50px;
-    width: 50px;
-    margin-right: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-text {
-    margin-left: 8px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.2;
-    color: #ff6b6b;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
 /* Hero Section */
 .hero {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,6 +52,7 @@ header {
 }
 
 .hero-content {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,6 +85,7 @@ header {
 }
 
 .hero-text {
+    font-family: 'Poppins', sans-serif;
     max-width: 512px;
     margin-top: 48px;
     color: #4b5563;
@@ -159,6 +118,7 @@ header {
 
 /* Our Story Section - Improved Layout */
 .story-section {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;

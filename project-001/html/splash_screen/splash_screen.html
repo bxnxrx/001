@@ -4,21 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayya Says - Akka Knows</title>
-    <link rel="stylesheet" href="../../css/splash_screen/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #f7f9fa;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .splash-container {
+            width: 100%;
+            max-width: 800px;
+            position: relative;
+            padding: 20px;
+        }
+
+        .splash-card {
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .brand-stripe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(to right, #006874, #ff7f50);
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .logo-badge {
+            background: #006874;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 8px 15px rgba(0, 104, 116, 0.15);
+        }
+
+        .welcome-text {
+            font-size: 38px;
+            font-weight: 800;
+            color: #062e33;
+            margin-bottom: 40px;
+        }
+
+        .image-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto 30px;
+        }
+
+        .image-bg {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(255, 127, 80, 0.1) 0%, rgba(0, 104, 116, 0.05) 70%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .circle-1, .circle-2 {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+
+        .circle-1 {
+            width: 80px;
+            height: 80px;
+            background-color: #006874;
+            bottom: 40px;
+            left: 20%;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        .circle-2 {
+            width: 60px;
+            height: 60px;
+            background-color: #ff7f50;
+            top: 60px;
+            right: 25%;
+            animation: float 5s infinite ease-in-out 1s;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .character-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: relative;
+            z-index: 2;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .loading-container {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .loading-bar {
+            height: 6px;
+            width: 100%;
+            background-color: #f0f0f0;
+            border-radius: 3px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .loading-progress {
+            position: absolute;
+            height: 100%;
+            background: linear-gradient(to right, #006874, #ff7f50);
+            border-radius: 3px;
+            animation: loading 2.5s infinite ease-in-out;
+        }
+
+        @keyframes loading {
+            0% { width: 0%; left: 0; }
+            50% { width: 100%; left: 0; }
+            100% { width: 0%; left: 100%; }
+        }
+
+        .loading-text {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .splash-card {
+                padding: 30px 20px;
+            }
+
+            .image-container {
+                width: 220px;
+                height: 220px;
+            }
+
+            .image-bg {
+                width: 180px;
+                height: 180px;
+            }
+
+            .welcome-text {
+                font-size: 30px;
+            }
+        }
+    </style>
 </head>
 <body>
 <div class="splash-container">
-    <video id="splash-video" autoplay muted>
-        <source src="../../assests/Untitled video - Made with Clipchamp (7).mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="splash-card">
+        <div class="brand-stripe"></div>
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+
+
+
+        <div class="image-container">
+            <div class="image-bg"></div>
+            <img src="../../assests/welcome.png" alt="Ayya and Akka" class="character-image">
+        </div>
+
+        <h1 class="welcome-text">Welcome to your AI bestie</h1>
+
+        <div class="loading-container">
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-text">Loading</div>
+        </div>
+    </div>
 </div>
 
 <script>
-    document.getElementById('splash-video').addEventListener('ended', function() {
-        // Redirect to home page after video ends
-        window.location.href = '../home/home.html';
-    });
+    // Simulate loading progress
+    setTimeout(() => {
+        window.location.href = "project-001/html/home/home.html"; // replace with your actual page
+    }, 1000); // 3 seconds
 </script>
 </body>
 </html>

@@ -98,3 +98,10 @@ body {
 .update-button:hover {
     background-color: #8236e0;
 }
+.name, .username, .age-gender {
+    min-height: 30px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #222;
+    text-align: center;
+}
